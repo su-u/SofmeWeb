@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    width:700px;
+
+    margin-right: auto;
+    margin-left : auto;
+}
+
+#header{
+
+}
+.mainimg{
+
+}
+#test{
+
+    margin: 0, auto;
+}
+
+.people{
+        padding: 50px 50px 20px 50px;
+        margin: 20px 5px 0px 5px;
+        font-weight: bold;
+        color: #6091d3;/*文字色*/
+        background: #FFF;
+        border: solid 3px #6091d3;/*線*/
+        border-radius: 10px;/*角の丸み*/
+
+        float: left;
+
+
+}
+
+.people p{
+    margin: 0; 
+    padding: 0;
+}
