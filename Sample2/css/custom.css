@@ -1,8 +1,170 @@
 /* Your custom css code goes here */
+/* index.html */
 .service.left-icon{
     padding: 30px 0 60px 0;
+    background: #22eaaa;
+    border-radius: 10px;/*角の丸み*/
+}
+
+
+.probootstrap-section .overlap {
+    margin-top: -190px;
+}
+
+.freshman{
+    float: none;
 }
 
 .col-md-6 {
     width: 100%;
+}
+
+/* dtm */
+.probootstrap-card.with-hover .probootstrap-card-text:before {
+    background: #1acbf3;
+}
+.new-song{
+    padding-left: 20px;
+}
+.tableList{
+    margin-top: 20px;
+}
+
+
+/* dtm/dtm-member.html */
+.service.left-icon.dtm{
+    padding: 20px 0 10px 0;
+    border-radius: 10px;/*角の丸み*/
+    line-height:normal;
+}
+/* 回生ごとに色変更 */
+.service.left-icon.dtm.dtm-1st{
+    background: #24e1ff;
+}
+.service.left-icon.dtm.dtm-2nd{
+    background: #22b6ef;
+}
+.service.left-icon.dtm.dtm-3rd{
+    background: #30abe6;
+}
+.service.left-icon.dtm.dtm-4th{
+    background: #5072bf;
+}
+.service.left-icon.dtm.dtm-5th{
+    background: #7560ec;
+}
+
+.member-nav{
+    margin: 0;
+    padding: 0
+}
+
+.member-nav li {
+    margin: 0;
+    padding: 0 5px;
+    list-style: none;
+    display: inline;
+    font-size: 18px
+}
+
+.member-nav li a {
+    font-weight: 400;
+    padding: 10px 0;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none
+}
+.member-nav li a:hover{
+    color:#22eaaa;
+}
+.member-nav li.active a{
+    color:#24e1ff;
+    font-size: 20px;
+}
+.member-nav li a h2{
+    display: inline;
+}
+
+/* dtm/dtm-what.html */
+.col-md-4-dtm{
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* dtm/dtm-study.html */
+a.dtm-study{
+    color: #000000;
+    text-decoration: underline
+}
+
+a.dtm-study:hover{
+    color:#22eaaa;
+    text-decoration: underline
+}
+
+/* dtm/dtm.events */
+.events-songs {
+    margin: auto;
+	width:100%;
+	border-right:#44c3da solid 1px;
+	border-collapse: collapse;
+}
+.events-songs thead th {
+	background:#44c3da;
+	color:#FFF;
+	padding:10px 15px;
+	border-right:#FFF solid 1px;
+	border-bottom:#FFF solid 1px;
+}
+.events-songs thead th:last-child {
+	border-right:#44c3da solid 1px;
+}
+.events-songs tbody th {
+	background:#44c3da;
+	color:#FFF;
+	padding:10px 15px;
+	border-bottom:#FFF solid 1px;
+}
+.events-songs tbody tr:last-child th {
+	border-bottom:#44c3da solid 1px;
+}
+.events-songs tbody td {
+	background:#FFF;
+	padding:10px 15px;
+	border-left:#44c3da solid 1px;
+	border-bottom:#44c3da solid 1px;
+}
+.events-songs .song-number{
+	padding: 5px 5px;
+}
+ 
+@media screen and (max-width: 640px) {
+    .events-songs thead {
+        display:none;
+    }
+    .events-songs tbody th {
+        display:block;
+    }
+    .events-songs tbody td {
+        padding: 3px 10px;
+        display:block;  
+    }
+    .events-songs tbody td::before {
+        content: attr(label);
+        float: left;
+        clear:both;
+        font-weight:bold;
+    }
+    .events-songs tbody td p {
+      padding-left:6em;
+    }
+    .events-songs .song-number{
+        background:#44c3da;
+    }
+}
+.panel-body.dtm{
+
 }
