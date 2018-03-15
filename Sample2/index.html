@@ -27,20 +27,15 @@
     <div class="container">
         <a href="index.html" class="probootstrap-logo">ソフトメディア研究会</a>
         
-        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>メニュー</i></a>
         <div class="mobile-menu-overlay"></div>
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">ホーム</a></li>
             <li><a href="program/program.html" title="プログラム班のページ">プログラム班</a></li>
             <li><a href="multi/multi.html" title="マルチメディア班のページ">マルチ班</a></li>
             <li><a href="dtm/dtm.html" title="DTM班のページ">DTM班</a></li>
-          </ul>
-          <ul class="probootstrap-right-nav hidden-xs">
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-facebook2"></i></a></li>
-            <li><a href="#"><i class="icon-instagram2"></i></a></li>
           </ul>
           <div class="extra-text visible-xs"> 
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
@@ -57,44 +52,48 @@
     </div>
   </header>
   <!-- END: header -->
-  <!-- <section class="MainImagShow">
-    <ul class="slides">
-      <li style="background-image: url(img/slider_1.jpg)" class="overlay">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="probootstrap-slider-text text-center">
-                <h1 class="probootstrap-heading">We Create Interfaces</h1>
+  <!-- <section class="flexslider">
+      <ul class="slides">
+        <li style="background-image: url(img/slider_1.jpg)" class="overlay" id="f1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading">We Create Interfaces</h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </li>
-      <li style="background-image: url(img/slider_2.jpg)" class="overlay">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="probootstrap-slider-text text-center">
-                <h1 class="probootstrap-heading">We Design Powerful Experiences</h1>
+        </li>
+        <li style="background-image: url(img/slider_2.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading">We Design Powerful Experiences</h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        
-      </li>
-      <li style="background-image: url(img/slider_3.jpg)" class="overlay">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="probootstrap-slider-text text-center">
-                <h1 class="probootstrap-heading">We Bring Ideas To Life</h1>
+          
+        </li>
+        <li style="background-image: url(img/slider_3.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading">We Bring Ideas To Life</h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
-  </section> -->
+        </li>
+      </ul>
+      <ul class="flex-direction-nav">
+        <li class="flex-nav-prev"><a class="flex-prev" href="#"></a></li>
+        <li class="flex-nav-next"><a class="flex-next" href="#"></a></li>
+      </ul>
+    </section> -->
 
   <section class="probootstrap-slider flexslider">
     <ul class="slides">
@@ -115,15 +114,26 @@
 
   <section class="probootstrap-section">
     <div class="container">
+        <div class="col-md-4-topic">
+            <div class="service left-icon" id="join">
+              <div class="icon">
+                  <a href="join.html"　title="新入生のページ"><i class="icon-tux"></i></a>
+              </div>
+              <div class="text">
+                <h3 class="heading"><a href="join.html"　title="新入生のページ">新入生向け</a></h3>
+                <p>ソフトメディア研究会の活動をまとめて紹介しちゃいます！！</p>
+              </div>
+            </div>
+          </div>
       <div class="row overlap">
           <div class="col-md-4">
             <div class="service left-icon" id="program">
               <div class="icon">
-                <i class="icon-desktop"></i>
+                  <a href="program/program.html"　title="プログラム班のページ"><i class="icon-desktop"></i></a>
               </div>
               <div class="text">
                 <h3 class="heading"><a href="program/program.html"　title="プログラム班のページ">プログラム班</a></h3>
-                <p>プログラム言語を使用し、ゲームやアプリケーションを開発する。<br>娯楽モノから、日常に使えるものまで様々。</p>
+                <p>プログラミング言語を使用し、ゲームやアプリケーションを開発する。<br>娯楽モノから、日常に使えるものまで様々。</p>
               </div>
             </div>
           </div>
@@ -131,7 +141,7 @@
         <div class="col-md-4">
           <div class="service left-icon" id="multi">
             <div class="icon">
-              <i class="icon-images"></i>
+                <a href="multi/multi.html" title="マルチメディア班のページ"><i class="icon-images"></i></a> 
             </div> 
             <div class="text">
               <h3 class="heading"><a href="multi/multi.html" title="マルチメディア班のページ">マルチ班</a></h3>
@@ -142,7 +152,7 @@
         <div class="col-md-4">
           <div class="service left-icon" id="dtm">
             <div class="icon">
-              <i class="icon-headphones"></i>
+                <a href="dtm/dtm.html" title="DTM班のページ"><i class="icon-headphones"></i></a> 
             </div>
             <div class="text">
               <h3 class="heading"><a href="dtm/dtm.html" title="DTM班のページ">DTM班</a></h3>
@@ -159,147 +169,73 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center section-heading">
-          <h2>Our Services</h2>
+          <h2>About</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6" data-animate-effect="fadeInLeft">
-
-          <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
-
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h3 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
-
-                    活動方針
-                  </a>
-                </h3>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-                  
-                </div>
-              </div>
-            </div>
-
-
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingFour">
-                <h3 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    部長挨拶
-                  </a>
-                </h3>
-              </div>
-              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFive">
-                  <h3 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      活動日,活動場所
-                    </a>
-                  </h3>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                  <div class="panel-body">
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                  </div>
-                </div>
-              </div>
-
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingSix">
-                <h3 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      メーリングリスト
-                  </a>
-                </h3>
-              </div>
-              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                <div class="panel-body">
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingSeven">
-                <h3 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                      Q &amp; A
-                  </a>
-                </h3>
-              </div>
-              <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                <div class="panel-body">
-                  <p>
-                    部会はいつ？：<br>
-                    入部費は？：<br>
-                    年間費用は？：<br>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="c-panel c-panel-about">
-              <div class="c-panel-heading">
-                  ソフトメディア研究会とは？
-              </div>
-                <div class="c-panel-body">
-                  <p>
-                    ソフトメディア研究会とは
-                    パソコンを中心に使って創作活動を行うサークルです。プログラム班、マルチメディア班、DTM班の３つがあります。
-                    プログラム班は、様々なプログラミング言語を駆使してアプリケーションの制作を行っています。
-                    マルチメディア班は、イラストや3DCGの制作を行っています。
-                    DTM班は、音楽作成ソフトで音楽を作ります。DJ始めました。
-                    so NVIDIA Fuck you.
-                  </p>
-                </div>
-            </div>
-            <div class="c-panel c-panel-about">
-              <div class="c-panel-heading">
-                  部長挨拶
-              </div>
-                <div class="c-panel-body">
-                  <p>
-                      ソフトメディア研究会のサイトに来訪頂きましてありがとうございます。
-                      当サイトには現在や過去のサークル員が制作したプログラムやCG、音楽などが置いてあり、これらにふれることができます。
-                      制作、というと難しく聞こえるかもしれませんが、これらの作品はちょっとした機材(パソコン、他)とサークル員のちょっとした努力によって作られています。
-                      作品にふれてみて興味を持たれた方は、大学祭などのイベントや学外でのイベントで生のソフトメディア研究会にふれてみていただきたいです。
-                      貴方が体験する楽しさだけではなく、貴方の創造する楽しさを発見するお手伝いができるかもしれません。
-                      
-                      平成29年度 ソフトメディア研究会 部長
-                      片貝　勇太
-                  </p>
-                </div>
-            </div>
-            <div class="c-panel c-panel-about">
-              <div class="c-panel-heading">
-                  Q &amp; A
-              </div>
-                <div class="c-panel-body">
-                  <p>
-                    部会はいつ？：<br>
-                    入部費は？：<br>
-                    年間費用は？：<br>
-                  </p>
-                </div>
-            </div>
-
-
-
-
-
+        <div class="c-panel c-panel-about">
+          <div class="c-panel-heading">
+            ソフトメディア研究会とは？
           </div>
+          <div class="c-panel-body">
+            <p>
+              パソコンを中心に使って創作活動を行うサークルです。<strong>プログラム班</strong>、<strong>マルチメディア班</strong>、<strong>DTM班</strong>の３つがあります。<br>
+              <ul>
+                <li>プログラム班は、様々なプログラミング言語を駆使してアプリケーションの制作を行っています。
+                  <li>マルチメディア班は、イラストや3DCGの制作を行っています。
+                  <li>DTM班は、音楽作成ソフトで音楽を作ります。DJ始めました。
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="c-panel c-panel-about">
+          <div class="c-panel-heading">
+            活動内容
+          </div>
+            <div class="c-panel-body">
+                <p>平常時の主な活動日は指定しておりません。</p>
+                <p>空いている時間に部室に来て作業をしたり、役職の仕事をしたり、談話したりしています。
+                <p>ソフメでは<strong>毎週水曜日午後6:45</strong>から部会を開いており、会員は参加が義務付けられています。（授業等がある場合はそちらを優先します。）
+                <p>部会では文化会での行事の人員を選出したり、設備購入等の議決を取ったり、重要な事を話し合います。
+                <p>また、年に２回ある大きなイベント、<strong>文化の祭典</strong>と<strong>津田沼祭</strong>では、サークルとして各自が作品を出品します。
+                <p>発表する作品は、基本的に日々の活動の中で制作したものとなります。
+                <p>主なものとしてはゲーム、音楽、CG等があり、それぞれの班がコラボして一つの作品を作ると言うことの行われています。
+                
+              </p>
+            </div>
+        </div>
+        <div class="c-panel c-panel-about">
+          <div class="c-panel-heading">
+              部長挨拶
+          </div>
+            <div class="c-panel-body">
+              <p>ソフトメディア研究会のサイトに来訪頂きましてありがとうございます。
+              <p>当サイトには現在や過去のサークル員が制作したプログラムやCG、音楽などが置いてあり、これらにふれることができます。 
+              <p>制作、というと難しく聞こえるかもしれませんが、これらの作品はちょっとした機材(パソコン、他)とサークル員のちょっとした努力によって作られています。
+              <p>作品にふれてみて興味を持たれた方は、大学祭などのイベントや学外でのイベントで生のソフトメディア研究会にふれてみていただきたいです。
+              <p>貴方が体験する楽しさだけではなく、貴方の創造する楽しさを発見するお手伝いができるかもしれません。
+              <br>
+              <p>平成29年度 ソフトメディア研究会 部長
+              <p>片貝　勇太  
+            </div>
+        </div>
+        <div class="c-panel c-panel-about">
+          <div class="c-panel-heading">
+              Q &amp; A
+          </div>
+          <div class="c-panel-body">
+            <p>
+              部会はいつ？：<br>
+              入部費は？：<br>
+              年間費用は？：<br>
+            </p>
+          </div>
+        </div>
+
+
+
+
+
           <!-- END panel-group -->
         </div>
 
@@ -321,9 +257,8 @@
               <a href="single-page.html"><img src="img/slider_1.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
             </div>
             <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Vokalia and Consonantia</h2>
-              <p class="category">Design</p>
-              <p><a href="single-page.html">View details</a></p>
+              <h2 class="probootstrap-card-heading mb0">プログラム班　中間発表</h2>
+              <p class="category">2018年2月24日</p>
             </div>
           </div>
         </div>
@@ -333,9 +268,8 @@
               <a href="single-page.html"><img src="img/slider_2.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
             </div>
             <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Live the Blind Texts</h2>
-              <p class="category">Model</p>
-              <p><a href="single-page.html">View details</a></p>
+              <h2 class="probootstrap-card-heading mb0">マルチ班　サンクリ中間</h2>
+              <p class="category">2018年1月10日</p>
             </div>
           </div>
         </div>
@@ -345,9 +279,8 @@
               <a href="single-page.html"><img src="img/slider_3.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
             </div>
             <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Behind the Word Mountains</h2>
-              <p class="category">Website</p>
-              <p><a href="single-page.html">View details</a></p>
+              <h2 class="probootstrap-card-heading mb0">春合宿</h2>
+              <p class="category">2018年3月16日</p>
             </div>
           </div>
         </div>
@@ -361,61 +294,52 @@
       <div class="row mb60">
         <div class="col-md-3">
           <div class="probootstrap-footer-widget">
-            <h4 class="heading">About Virb.</h4>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            <p><a href="#">Read more...</a></p>
+            <h4 class="heading">ソフトメディア研究会</h4>
+            <ul class="stack-link">
+              <li><a href="#">Home</a></li>
+            </ul>
           </div> 
         </div>
         <div class="col-md-3">
           <div class="probootstrap-footer-widget probootstrap-link-wrap">
-            <h4 class="heading">Quick Links</h4>
+            <h4 class="heading">プログラム班</h4>
             <ul class="stack-link">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">プログラム班の紹介</a></li>
+              <li><a href="#">作品の紹介</a></li>
+              <li><a href="#">メンバー</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-3">
           <div class="probootstrap-footer-widget">
-            <h4 class="heading">More Links</h4>
+            <h4 class="heading">マルチ班</h4>
             <ul class="stack-link">
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Support Help</a></li>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">マルチメディア班の紹介</a></li>
+              <li><a href="#">メンバー紹介</a></li>
+              <li><a href="#">講座資料</a></li>
+              <li><a href="#">作品展示</a></li>
             </ul>
           </div> 
         </div>
         <div class="col-md-3">
           <div class="probootstrap-footer-widget">
-            <h4 class="heading">Subscribe</h4>
-            <p>Far far away behind the word mountains far from.</p>
-            <form action="#">
-              <div class="form-field">
-                <input type="text" class="form-control" placeholder="Enter your email">
-                <button class="btn btn-subscribe">Send</button>
-              </div>
-            </form>
-          </div>
+            <h4 class="heading">DTM班</h4>
+            <ul class="stack-link">
+              <li><a href="#">DTM班の紹介</a></li>
+              <li><a href="#">メンバー</a></li>
+              <li><a href="#">講座資料</a></li>
+              <li><a href="#">M3</a></li>
+              <li><a href="#">イベント</a></li>
+            </ul>
+          </div> 
         </div>
       </div>
       <div class="row copyright">
         <div class="col-md-6">
           <div class="probootstrap-footer-widget">
             <p>&copy; 2017 <a href="https://uicookies.com/">uiCookies:Virb</a>. Designed by <a href="https://uicookies.com/">uicookies.com</a> <br> Demo Photos from <a href="https://unsplash.com/">Unsplash</a></p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="probootstrap-footer-widget right">
-            <ul class="probootstrap-social">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -430,6 +354,5 @@
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
-
   </body>
 </html>
