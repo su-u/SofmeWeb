@@ -13,6 +13,12 @@
     padding: 5px;
     background: #0000006b;
 }
+@media screen and (max-width: 767px){
+    .probootstrap-header {
+        position: relative;
+        background: #000000;
+    }
+}
 
 .probootstrap-burger-menu {
     top: 14px;
@@ -139,7 +145,7 @@
 /* --------------------------------------- */
 .flexslider,.flexslider .slides>li,.slider-height {
     height: 100%;
-    max-height: 600px;
+    max-height: 700px;
 }
 
 .flexslider {
