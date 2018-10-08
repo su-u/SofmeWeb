@@ -1,7 +1,0 @@
-/*ナビゲーションボタンの色*/
-.sp-button {
-    border:2px solid #ccc;
-}
-.sp-selected-button {
-  background-color: #ccc;
-}
