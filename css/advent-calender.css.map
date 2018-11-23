@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,OAAO;CACnB;;AACD,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,OAAO;CACjB",
-    "sources": [
-        "advent-calender.scss"
-    ],
-    "names": [],
-    "file": "advent-calender.css"
-}
