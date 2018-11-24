@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "MSゴシック",sans-serif;
+}
+body{background-image: url(image/stars.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  text-align: center;}
+a:link{ color: navy;}
+a:visited{ color: brown;}
+a:hover{ color:maroon; background:#FF0;}
+a:active{ background: aqua;}
+
+.Header{
+	background: rgba(106, 78, 31, 0.4);
+	width: 100%;
+	height:10%;
+	font-size: auto;
+	position: fixed; top:0px; left:0px;
+	z-index:1;
+}
+
+.Title{
+  position: absolute;
+  left: 50%;
+  width: 7em;
+}
