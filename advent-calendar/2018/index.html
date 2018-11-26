@@ -13,33 +13,13 @@
         <meta name="keywords" content="ソフメ,ソフトメディア研究会,sofme" />
 
         <link
-            rel="stylesheet"
-            href="/css/slider-pro/slider-pro.min.css"
-            media="screen"
-        />
-        <link
-            href="http://fonts.googleapis.com/css?family=Open+Sans:400,600"
-            rel="stylesheet"
-            type="text/css"
-        />
-
-        <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/css/styles-merged.css" media="screen" />
-        <link rel="stylesheet" href="/css/style.min.css" media="screen" />
-        <link rel="stylesheet" href="/css/custom.css" media="screen" />
+        <link rel="stylesheet" href="/css/styles-merged.css" />
+        <link rel="stylesheet" href="/css/style.min.css" />
+        <link rel="stylesheet" href="/css/custom.css" />
         <link rel="stylesheet" href="/css/advent-calender.css" media="screen" />
-
-        <script
-            type="text/javascript"
-            src="/js/slider-pro/jquery-1.11.0.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="/js/slider-pro/jquery.sliderPro.min.js"
-        ></script>
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5shiv.min.js"></script>
@@ -47,76 +27,39 @@
         <![endif]-->
         <script
             type="text/javascript"
-            src="/js/slider-pro/slider-pro.js"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
         ></script>
-        <script type="text/javascript" src="js/analytics.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+        <script type="text/javascript" src="/js/analytics.js"></script>
     </head>
 
     <body>
-        <!-- START: header -->
-        <div class="probootstrap-loader"></div>
-        <header role="banner" class="probootstrap-header">
-            <div class="container">
-                <a href="/index.html" class="probootstrap-logo"
-                    >ソフトメディア研究会</a
-                >
-                <a href="#" class="probootstrap-burger-menu visible-xs">
-                    <i>メニュー</i>
-                </a>
-                <div class="mobile-menu-overlay"></div>
-                <nav role="navigation" class="probootstrap-nav hidden-xs">
-                    <ul class="probootstrap-main-nav">
-                        <li class="active"><a href="/index.html">ホーム</a></li>
-                        <li>
-                            <a
-                                href="/program/index.html"
-                                title="プログラム班のページ"
-                                >プログラム班</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="/multi/index.html"
-                                title="マルチメディア班のページ"
-                                >マルチ班</a
-                            >
-                        </li>
-                        <li>
-                            <a href="/dtm/index.html" title="DTM班のページ"
-                                >DTM班</a
-                            >
-                        </li>
-                    </ul>
-                    <div class="extra-text visible-xs">
-                        <a href="#" class="probootstrap-burger-menu">
-                            <i>Menu</i>
-                        </a>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- END: header -->
-
+        <script type="text/javascript">
+            header('../../');
+        </script>
         <section class="probootstrap-slider flexslider">
-            <div id="slide" class="slider-pro">
-                <div class="sp-slides">
-                    <div class="sp-slide">
-                        <img class="sp-image" src="/img/01.jpg" />
+            <ul class="slides">
+                <li
+                    style="background-image: url(./img/welcome.jpg);"
+                    class="overlay2"
+                >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div
+                                    class="slides-text probootstrap-animate"
+                                    data-animate-effect="fadeIn"
+                                >
+                                    <h2>2018年アドベントカレンダー</h2>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sp-slide">
-                        <img class="sp-image" src="/img/02.jpg" />
-                    </div>
-                    <div class="sp-slide">
-                        <img class="sp-image" src="/img/03.jpg" />
-                    </div>
-                    <div class="sp-slide">
-                        <img class="sp-image" src="/img/04.jpg" />
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
         <!-- END: slider -->
-
         <div class="probootstrap-section"><div class="container"></div></div>
         <!-- END section -->
         <section class="probootstrap-section">
