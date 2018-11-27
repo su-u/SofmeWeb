@@ -1,3 +1,7 @@
+$h1_size: 40px;
+$h2_size: 38px;
+$h3_size: 36px;
+
 .calender-date {
     background: #383838;
     color: #fff;
@@ -11,4 +15,19 @@
     .probootstrap-card-text {
         padding: 10px;
     }
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: $h1_size;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.5;
+}
+h3 {
+    font-size: 17px;
 }
