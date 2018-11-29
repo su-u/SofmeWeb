@@ -17,6 +17,58 @@
   max-width: 800px;
 }
 
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+table thead th {
+  color: #2e7d32 !important;
+  padding-bottom: 10px;
+}
+
+table .date {
+  width: 8%;
+  font-weight: 600;
+}
+
+table .title {
+  width: 70%;
+}
+
+table .title a {
+  color: #000000;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+table .title a:hover {
+  text-decoration: none;
+}
+
+table .title a:focus {
+  text-decoration: none;
+}
+
+table .author {
+  width: 22%;
+}
+
+table tr td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+table tbody tr td {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 30px 30px;
+  max-width: 640px;
+  word-break: break-all;
+}
+
 .item h1,
 .item h2,
 .item h3 {
