@@ -2,11 +2,13 @@ $h1_size: 40px;
 $h2_size: 30px;
 $h3_size: 24px;
 
+$calendar_icon_size: 40px;
+
 $breakpoints: (
-    'sm': 'screen and (min-width: 375px)',
-    'md': 'screen and (min-width: 768px)',
-    'lg': 'screen and (min-width: 1000px)',
-    'xl': 'screen and (min-width: 1200px)'
+    'sm': 'screen and (max-width: 414px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)'
 ) !default;
 
 //メディアクエリ用
@@ -16,11 +18,8 @@ $breakpoints: (
     }
 }
 
-.calender-date {
-    background: #383838;
-    color: #fff;
-    font-size: 18px;
-    padding: 3px 5px;
+.calendar-date {
+    margin-top: 50px;
 }
 .author {
     color: #7e7e7e;
@@ -45,14 +44,29 @@ table {
     thead th {
         color: #2e7d32 !important;
         padding-bottom: 10px;
+        @include mq(sm) {
+            display: none;
+        }
     }
 
     & .date {
         width: 8%;
         font-weight: 600;
+        @include mq(sm) {
+            width: auto;
+            margin-top: 40px;
+            padding-left: 10px;
+        }
+    }
+
+    & .color {
+        @include mq(sm) {
+            background-color: #52a747;
+            border-radius: 5px;
+        }
     }
     & .title {
-        width: 70%;
+        width: 62%;
 
         & a {
             color: #000000;
@@ -65,22 +79,62 @@ table {
                 text-decoration: none;
             }
         }
+        @include mq(sm) {
+            width: auto;
+        }
     }
-
-    & .author {
-        width: 22%;
+    & .icon {
+        width: 5%;
+        @include mq(sm) {
+            width: auto;
+        }
     }
-
-    & tr td {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
     tbody tr td {
         border-top: 1px solid rgba(0, 0, 0, 0.12);
         margin: 30px 30px;
         max-width: 640px;
         word-break: break-all;
+
+        @include mq(sm) {
+            border: none;
+            margin: 5px 10px;
+            display: block;
+        }
+    }
+    & tr td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @include mq(sm) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    tbody {
+        & .icon {
+            width: $calendar_icon_size;
+            height: $calendar_icon_size;
+            margin: auto;
+            border-radius: 10px;
+            @include mq(sm) {
+                width: auto;
+                display: inline;
+                margin-left: 5px;
+            }
+        }
+        & .author {
+            width: 20%;
+            @include mq(sm) {
+                width: auto;
+                display: inline;
+                margin-bottom: 10px;
+            }
+        }
+        tr {
+            @include mq(sm) {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 

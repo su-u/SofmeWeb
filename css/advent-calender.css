@@ -1,8 +1,5 @@
-.calender-date {
-  background: #383838;
-  color: #fff;
-  font-size: 18px;
-  padding: 3px 5px;
+.calendar-date {
+  margin-top: 50px;
 }
 
 .author {
@@ -30,13 +27,34 @@ table thead th {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 414px) {
+  table thead th {
+    display: none;
+  }
+}
+
 table .date {
   width: 8%;
   font-weight: 600;
 }
 
+@media screen and (max-width: 414px) {
+  table .date {
+    width: auto;
+    margin-top: 40px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  table .color {
+    background-color: #52a747;
+    border-radius: 5px;
+  }
+}
+
 table .title {
-  width: 70%;
+  width: 62%;
 }
 
 table .title a {
@@ -53,13 +71,20 @@ table .title a:focus {
   text-decoration: none;
 }
 
-table .author {
-  width: 22%;
+@media screen and (max-width: 414px) {
+  table .title {
+    width: auto;
+  }
 }
 
-table tr td {
-  padding-top: 20px;
-  padding-bottom: 20px;
+table .icon {
+  width: 5%;
+}
+
+@media screen and (max-width: 414px) {
+  table .icon {
+    width: auto;
+  }
 }
 
 table tbody tr td {
@@ -67,6 +92,59 @@ table tbody tr td {
   margin: 30px 30px;
   max-width: 640px;
   word-break: break-all;
+}
+
+@media screen and (max-width: 414px) {
+  table tbody tr td {
+    border: none;
+    margin: 5px 10px;
+    display: block;
+  }
+}
+
+table tr td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  table tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+table tbody .icon {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 414px) {
+  table tbody .icon {
+    width: auto;
+    display: inline;
+    margin-left: 5px;
+  }
+}
+
+table tbody .author {
+  width: 20%;
+}
+
+@media screen and (max-width: 414px) {
+  table tbody .author {
+    width: auto;
+    display: inline;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  table tbody tr {
+    margin-bottom: 20px;
+  }
 }
 
 .item h1,
@@ -126,7 +204,7 @@ table tbody tr td {
   color: #32ab84;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 414px) {
   .item {
     margin: 0 10px;
   }
