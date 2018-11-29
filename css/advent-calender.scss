@@ -1,6 +1,20 @@
 $h1_size: 40px;
-$h2_size: 38px;
-$h3_size: 36px;
+$h2_size: 30px;
+$h3_size: 24px;
+
+$breakpoints: (
+    'sm': 'screen and (min-width: 375px)',
+    'md': 'screen and (min-width: 768px)',
+    'lg': 'screen and (min-width: 1000px)',
+    'xl': 'screen and (min-width: 1200px)'
+) !default;
+
+//メディアクエリ
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
 
 .calender-date {
     background: #383838;
@@ -17,17 +31,68 @@ $h3_size: 36px;
     }
 }
 
-h1 {
-    font-weight: 700;
-    line-height: 1.5;
-    font-size: $h1_size;
+.slides-text {
+    max-width: 800px;
 }
 
-h2,
-h3 {
-    font-weight: 700;
-    line-height: 1.5;
-}
-h3 {
-    font-size: 17px;
+//記事
+.item {
+    & h1,
+    & h2,
+    & h3 {
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: $h1_size;
+        padding: 5px 0;
+        margin: 10px 0 30px 0;
+    }
+    & h2,
+    & h3 {
+        border-bottom: 1px solid #dfe2e5;
+    }
+
+    & h2 {
+        font-weight: 600;
+        font-size: $h2_size;
+    }
+    & h3 {
+        font-size: $h3_size;
+    }
+
+    & table {
+        display: block;
+        width: 100%;
+        overflow: auto;
+
+        & th {
+            font-weight: 600;
+        }
+
+        & th,
+        & td {
+            padding: 6px 13px;
+            border: 1px solid #dfe2e5;
+        }
+
+        & tr {
+            background-color: #fff;
+            border-top: 1px solid #c6cbd1;
+        }
+
+        & tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+    }
+
+    & hr {
+        border-top: 3px solid rgb(226, 226, 226);
+    }
+    & p {
+        & a {
+            color: #32ab84;
+        }
+    }
+    @include mq(sm) {
+        margin: 0 10px;
+    }
 }
