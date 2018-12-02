@@ -27,7 +27,7 @@ table thead th {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table thead th {
     display: none;
   }
@@ -38,7 +38,7 @@ table .date {
   font-weight: 600;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .date {
     width: auto;
     margin-top: 40px;
@@ -46,7 +46,7 @@ table .date {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .color {
     background-color: #52a747;
     border-radius: 5px;
@@ -71,7 +71,7 @@ table .title a:focus {
   text-decoration: none;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .title {
     width: auto;
   }
@@ -81,7 +81,7 @@ table .icon {
   width: 5%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .icon {
     width: auto;
   }
@@ -94,7 +94,7 @@ table tbody tr td {
   word-break: break-all;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tbody tr td {
     border: none;
     margin: 5px 10px;
@@ -107,7 +107,7 @@ table tr td {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tr td {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -121,7 +121,7 @@ table tbody .icon {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tbody .icon {
     width: auto;
     display: inline;
@@ -133,7 +133,7 @@ table tbody .author {
   width: 20%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tbody .author {
     width: auto;
     display: inline;
@@ -141,7 +141,7 @@ table tbody .author {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tbody tr {
     margin-bottom: 20px;
   }
@@ -204,7 +204,11 @@ table tbody .author {
   color: #32ab84;
 }
 
-@media screen and (max-width: 414px) {
+.item a {
+  color: #38a98b;
+}
+
+@media screen and (max-width: 640px) {
   .item {
     margin: 0 10px;
   }
