@@ -195,6 +195,9 @@ table {
             color: #32ab84;
         }
     }
+    a {
+        color: #38a98b;
+    }
     @include mq(sm) {
         margin: 0 10px;
     }
