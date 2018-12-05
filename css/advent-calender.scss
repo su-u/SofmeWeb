@@ -162,6 +162,14 @@ table {
         font-size: $h3_size;
     }
 
+    & .half {
+        width: 49%;
+        float: left;
+        @include mq(sm) {
+            width: 100%;
+        }
+    }
+
     & table {
         display: block;
         width: 100%;

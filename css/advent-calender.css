@@ -171,6 +171,17 @@ table tbody .author {
   font-size: 24px;
 }
 
+.item .half {
+  width: 49%;
+  float: left;
+}
+
+@media screen and (max-width: 640px) {
+  .item .half {
+    width: 100%;
+  }
+}
+
 .item table {
   display: block;
   width: 100%;
