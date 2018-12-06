@@ -55,6 +55,7 @@ table .date {
 
 table .title {
   width: 62%;
+  margin-left: 30px;
 }
 
 table .title a {
@@ -87,21 +88,6 @@ table .icon {
   }
 }
 
-table tbody tr td {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  margin: 30px 30px;
-  max-width: 640px;
-  word-break: break-all;
-}
-
-@media screen and (max-width: 640px) {
-  table tbody tr td {
-    border: none;
-    margin: 5px 10px;
-    display: block;
-  }
-}
-
 table tr td {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -125,7 +111,7 @@ table tbody .icon {
   table tbody .icon {
     width: auto;
     display: inline;
-    margin-left: 5px;
+    margin-left: 30px;
   }
 }
 
@@ -145,6 +131,25 @@ table tbody .author {
   table tbody tr {
     margin-bottom: 20px;
   }
+}
+
+table tbody tr td {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 30px 30px;
+  max-width: 640px;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 640px) {
+  table tbody tr td {
+    border: none;
+    margin: 5px 10px;
+    display: block;
+  }
+}
+
+table tbody tr td img.icon {
+  margin-left: 0;
 }
 
 .item h1,
