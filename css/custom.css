@@ -320,9 +320,18 @@ a.p-study {
 }
 
 .p-product.img-responsive{
-    display: block;
-    max-width: 100%;
-    height:315px;
+    height:450px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+@media screen and (max-width: 640px) {
+    .p-product.img-responsive{
+        display: block;
+        max-width: 100%;
+        height:250px;
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 /* p/p-member.html */
