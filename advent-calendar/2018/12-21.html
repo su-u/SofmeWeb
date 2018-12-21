@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cit_sofume" />
+    <meta property="og:url" content="http://softmedia.sakura.ne.jp/" />
+    <meta property="og:title" content="ソフトメディア研究会" />
+    <meta property="og:description" content="SoftMedia Official Site | CIT" />
+    <meta property="og:image" content="http://softmedia.sakura.ne.jp/img/logo/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ソフトメディア研究会</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta name="description" content="ソフトメディア研究会" />
+    <meta name="keywords" content="ソフメ,ソフトメディア研究会,sofme" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles-merged.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/css/advent-calender.css" media="screen" />
+
+    <!--[if lt IE 9]>
+            <script src="js/vendor/html5shiv.min.js"></script>
+            <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/analytics.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        header('../../');
+    </script>
+
+    <section class="probootstrap-slider flexslider">
+        <ul class="slides">
+            <li style="background-image: url(/img/person_1.jpg);" class="overlay2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
+                                <h2>『Pluck』という音の作り方</h2>
+                                <p>Smile storm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- END section -->
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="item">
+                <h1>『Pluck』という音の作り方</h1>
+                <h2 id="-">初めに</h2>
+                <p>こんにちは、DTM班3回生のSmile stormと申します。明るい曲をよく作っている傍ら、Adobe製品を触ってはヒイヒイ言いながら課題をしております。</p>
+                <p>今回は、 <del>(<a href="http://softmedia.sakura.ne.jp/advent-calendar/2018/12-5.html">5日目の心太くん</a>に続き、21日目にして2回目の)</del>
+                    真面目なDTMの話をしようと思います。
+                    皆さんは<strong>『音作り』</strong>という言葉を知っていますか？ DTM班の方、特にクラブ系の曲を作る方は知っている、または行なったことがあると思います。意味は言葉の通り、<strong>音を作ること</strong>です。今回はソフトシンセを用いた音作りについてお話ししようと思います。</p>
+                <p style="font-size:40px;">そもそもなんで『音作り』をするの？</p>
+                <p>ここまでのほんの少しの話を聞いて、「そんな面倒なことをしなくても、既に用意されている音(プリセット)を使えばいいじゃん？」と思う方はいると思います。もちろん音作りは時間がかかるし、手間がかかるし、もう完成されているプリセットの音を使った方が作業は早いです。私も大半はプリセットの音をそのまま使ったり、少しだけ調整して使ったりしています。
+                    しかし、<strong>プリセットに自分の使いたい音が無い</strong>こともあります。そして、その音が、<strong>作っている曲のジャンルには欠かせない音</strong>だったり、<strong>自分が作っている曲で必ず使いたい音</strong>だったりします。そんなとき、
+                    <strong>自分で音を作ろう</strong> と思います。私は。
+                    といっても作りたい音の知識がそんなにあるわけではない私は、YouTubeで調べて見ては真似て作ることがよくあります。そうやって音を作って、自分の理想の音に近づくと、嬉しくなります。こういう勉強もたぶん大事です。</p>
+                <hr>
+                <p>…ここまで長々と前置きをしましたが、ここからが本題です。</p>
+                <p>今回は <del>(3回目)</del>、<strong>『Pluck』</strong>と呼ばれる音を実際に作ってみましょう！
+                    この音は、様々なジャンルで使われている音ですし、応用が利きますので、覚えておいて損はないと思います。
+                    私がよく使うソフトシンセが<a href="https://www.lennardigital.com/sylenth1/">Sylenth1</a>なので、とりあえずSylenth1を用いて説明します。他のシンセを使っている方は…申し訳ありませんが、脳内でいろいろ変換してください……。きっと同じようなことが他のシンセでも出来るはずです…。</p>
+                <h2 id="-pluck-">『Pluck』とは？</h2>
+                <p>Pluckとは、直訳すると</p>
+                <blockquote>
+                    <p>〔指などで弦を〕つま弾く、かき鳴らす<br>出典：<a href="https://eow.alc.co.jp/search?q=pluck">pluckの意味・使い方｜英辞郎 on
+                            the
+                            WEB：アルク</a><br>という意味があります。つまり、ピアノやギターといった弦楽器のように、<strong>アタック感のある音</strong>のことを指します。</p>
+                </blockquote>
+                <p>どんな曲にこの音が使われているかというと、多くのジャンルの曲で使われています。個人的にはProgressive
+                    Houseと呼ばれるジャンルの曲で使われているのが印象的です。いくつか参考に曲を載せますね。</p>
+                <ul>
+                    <li><a href="http://chrecords.bandcamp.com/track/aliceblue-progressive-house-remix">syatten -
+                            Aliceblue (Progressive House Remix)</a> (bandcamp)</li>
+                    <li><a href="https://soundcloud.com/midnightcoast/shion-hinano-teardrops-1">Shion Hinano -
+                            Teardrops</a> (SoundCloud)</li>
+                    <li><a href="https://youtu.be/NJGPF7t368E">Kizuna AI - hello,alone (Prod.MATZ)</a> (YouTube)
+                        その他にも、様々な曲やジャンルで使われています。
+                        最後の方に、Progressive Houseではないジャンルでの、私流のPluckの応用を載せていますので、そちらも合わせてご覧ください。</li>
+                </ul>
+                <h2 id="sylenth1-pluck-">Sylenth1を用いた『Pluck』の作り方</h2>
+                <p>ここからは、<a href="https://www.lennardigital.com/sylenth1/">Sylenth1</a>を用いたPluckの作り方を説明します。Sylenth1は139ユーロ(日本円で18,000円ほど)と高価なシンセですが、私が一番使い慣れているシンセで説明しやすいので許してください…。</p>
+                <p>あっ、なんと今クリスマスセールでSylenth1が30%OFFで買えるみたいですよ！ スゴイ！！ <a href="https://computermusic.jp/2018/12/18/%E8%B6%85%E4%BA%BA%E6%B0%97%E3%82%B7%E3%83%B3%E3%82%BB%E3%80%81lennardigital%E3%80%8Csylenth1%E3%80%8D%E3%81%8C%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A730/">詳しくはこちら</a></p>
+                <p>…話を戻して。時間のある方は、まず以下の動画を見ていただくと、大体分かるor何してんのか全然分からん！！！となると思いますので、ぜひご覧ください。(無編集で見辛くてごめん…！！)</p>
+                <iframe width="640" height="360" class="img-responsive frame" src="https://www.youtube.com/embed/D5NxV2YAR88?rel=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <p>それでは、解説していきます。</p>
+                <h2 id="0-22-sylenth1-">0:22　Sylenth1を起動/音作りの準備</h2>
+                <p>まず、Sylenth1を起動します(当たり前)。今回は説明の都合上最初からノート(音の音程や長さ)が打ち込まれていますが、どのタイミングで音作りをしてもいいし、いつ修正しても構いません。
+                    次に、真ん中のディスプレイみたいなところに表示されている『MENU』を押して、『Preset →
+                    Insert』の順に選択します。すると、設定が初期状態の新しいプリセットが作成されます。これで、一から音作りをすることができるようになりました。</p>
+                <h2 id="0-37-oscillator-polyphony">0:37　Oscillator/Polyphony</h2>
+                <p><img src="img/ss/1.jpg" alt="" class="img-responsive"></p>
+                <p>上部にあるこの部分ですね。Oscillatorは、音を作るための元の音を生成します。
+                    今回はSaw波(ノコギリ波)を使いたいので、WavesからSawを選択します。Voicesで波形の数を増やします。Detuneで音の高さをほんの少しずらします。すると、少し太く柔らかい音になったと思います。今回は少し尖った音を使いたいので、Detuneは少しだけ動かします。
+                    Phaseは波形の開始点をずらします。 <del>(今Sylenth1のマニュアルを見ながら書いてるのですが、これRETRIGがオンになってないと機能しないんですね…。オフの状態のまま音作ってたから、つまみいじった意味無いやん……。)</del></p>
+                <p>おっとここで慌てるようにOscillatorの上にあるPolyphonyをいじり始めましたね！(忘れてました)
+                    Polyphonyは、同時に鳴らせる音の数の最大数を設定できます。0だったら一生音が鳴らないし、1だったら和音を重ねても1つしか音が鳴らないし(メロディの音を作るとき、これがたまに重宝する)、16だったらたくさん同時に音が鳴ります。今回はたくさん音が鳴って欲しいので、16にしちゃいます。</p>
+                <p>さて、Polyphonyをいじる前までは、Oscillator
+                    A1の設定をしていましたが、A2でも同じように設定をして、音の厚みを増やします。ここで、A1とA2のDetuneを少しずらすと、さらに音の厚みが増しながら、まとまりのある音にでき(る気がし)ます。音作り、「気がする」も大事(たぶん)。</p>
+                <p>次にAMP ENVを設定します。
+                    ここで設定できるのは、Attack「ノーツの始め(鍵盤を押したとき)の、音量0の状態から音量が最大になるまでの時間」、Decay「音が最大になってからSustainで設定した音量になるまでの時間」、Sustain「Decayの終わりからノーツの終わり(鍵盤から指を離したとき)までの間の音量」、Release「ノーツの終わりの、Sustainで設定した音量から音が完全に無くなるまでの時間(余韻の長さ)」の4つです。画像を見た方が理解が早いと思うので、<strong>ADSRでググろう！！</strong></p>
+                <p><img src="img/ss/2.jpg" alt="" class="img-responsive"></p>
+                <p>そのあと、低音を増すためにOscillator B1でOctaveを下げてSaw波を鳴らし、ちょっときらびやかさを出すためにOscillator B2で小さくノイズを鳴らしました。AMP
+                    ENV
+                    BはAのコピペです。</p>
+                <h2 id="3-30-filter">3:30　Filter</h2>
+                <p><img src="img/ss/4.jpg" alt="" class="img-responsive"></p>
+                <p>ディスプレイみたいなやつの左にあるのがFilterです。これは、エフェクターのフィルターと一緒で、音の音域をカットするものです。</p>
+                <p>まず、今回はFilter Aしか使わないので、Filter BのInput SelectをNo Inputにし、Filter AのInput SelectをOscillator
+                    A・B両方にします。そして、高音をカットするフィルターを使いたいので、Filter Typeを低音を通すLowpassにします。すると、音がこもりました。</p>
+                <p>Sylenth1では、Filter AとFilter BのCutoffとResonanceを、下のFilter Controlで同時に変えることができます。今回はFilter
+                    Aしか使ってませんのでFilter AのCutoffを使ってもいいのですが、特に意味無くこちらのCutoffを使います。
+                    Cutoffでは、音域をカットする境目になる周波数を設定します。それを最小まで回すと………あっ、カットしすぎて音が無くなっちゃいました…。</p>
+                <p>しかし！ ここからあることをすると、音に驚きの変化が…。FilterのCutoffが大活躍します！！</p>
+                <h2 id="3-47-mod-env">3:47　MOD ENV</h2>
+                <p><img src="img/ss/4.jpg" alt="" class="img-responsive"></p>
+                <p>Filter Controlのさらに下にある、MOD ENV。なんとも一言で説明しづらい部分なので、動画の解説をしながら説明していきます。</p>
+                <p>まず、下のつまみの横にあるミニディスプレイを押して、Cutoff ABを選択します。このCutoffは、Filter A・B両方のCutoffのことです。もちろん、Filter
+                    Aしか使ってないので、Cutoff Aだけでも大丈夫です。</p>
+                <p>次に、………。あれっ！？ さっきAMP ENVで出てきたADSRがここにもあるよ！？！？
+                    これが大事なんです。動画内でADSRをいじっていると、音がさっきと大きく変わり、ただこもっている音からポンポン鳴る音になりました。スゴイ！！
+                    一体何をしているかというと、AMP ENVのときに音量がADSRに従って変わるのが、<strong>MOD
+                        ENVではミニディスプレイで選択したつまみ(今回はCutoff)がADSRに従って変わるんです！！</strong>
+                    ちなみにミニディスプレイの横にあるつまみは、ADSRの最小から最大までの動く幅を変えることができます。</p>
+                <h2 id="-pluck-11">『Pluck』、祝・完成！！！！！！！</h2>
+                <p>やりました！ これであなたはもうPluckを作ることができるようになりました！！
+                    このポンポンしている音がPluckです。また、動画の5:04からFilter
+                    ControlのCutoffを動かしているのですが、ここを動かすと音がどんどんハッキリ聴こえるようになって、メリハリをつけることができるのが、この音のもう1つの特徴でもあります。</p>
+                <p>覚えることは意外と少ないし、何より真似するのが簡単なので、音作りの最初の一歩には向いていると思います。是非、実践してみましょう！！！</p>
+                <hr>
+                <p>ん？ 5:24から何をしているのかって？ ここからもう少し、私の理想の音に近づけるための細かい調整をしています。簡単にさらっと説明します。</p>
+                <p>5:24… MOD ENV 2でPitch AB(音の高さ)を高速で動かし、アタック感を少し増やす。
+                    6:04… Warm Driveをオンにすると、倍音が増えて音に厚みが増える…らしい。
+                    6:51… 音がギターのように歪まない程度にDistortionをかけて、きらびやかさを増やす(増えてる気がする)。
+                    7:30… EQ(Equalizer)で低音を少し、高音をそこそこ大きくする。
+                    8:30… Reverbをかけて、お風呂やコンサートホールのような残響をつける。
+                    9:34… より細かい設定ができるEQ(Studio One付属)を使って余分な音(人が聞き取れない部分や曲に必要のない部分)をカットする。
+                    10:33… Compressor(WAVESのH-Comp、少し前のサーバーマンデーで無料配布してた)を使って、アタック感と異なるCutoffの音量バランスの調整。
+                    12:04… オートメーションでFilter ControlのCutoffを選択し、曲が再生されている間にCutoffが勝手に変わるようにする。
+                    13:06… ↑オートメーションに従ってFilter ControlのCutoffが変わっているのが分かる。
+                    13:38… 諸々調整。
+                    14:50… Stereo Imager(iZotopeのOzone Imager、無料で使える)で音の左右の広がりを大きくする。
+                    15:23… 他の音と合わせながら諸々調整。</p>
+                <p>という感じです。余計なことしすぎて動画が20分にもなってしまった。</p>
+                <p>この記事のために作っていた曲は、明日(22日)のDTM班の討論会を経た後に追記という形で載せようと思っています。(ごめんSBくんとネ管長)</p>
+                <h2 id="-pluck-smile-storm-">『Pluck』のSmile storm流応用</h2>
+                <p>他のジャンルでもPluckは使えるとお話ししましたが、その一例を載せます。</p>
+                <p><img src="img/ss/5.jpg" alt="" class="img-responsive"></p>
+                <p>これは私の楽曲『<a href="https://soundcloud.com/smilestorm35/heart-shaped-chocolate">Heart-Shaped
+                        Chocolate</a>』という曲で使われている音のSylenth1の画面です。一応Oscillator
+                    B1には1オクターブ上のSaw波が鳴ってます。
+                    実はさっきまで作ってた音とそんなに変わっていないんです。でも、疾走感のある曲にピッタリの、疾走感のある音になってると思います。
+                    変わっているポイントというと、Voicesを増やして音の厚みを増していることと、AMP
+                    ENVのSustainが高めになっていて、FilterのCutoffが高いときの音があまり減衰しないようになっていることというくらいです。</p>
+                <p>この音だけを抜き出したのが、↓これ↓です。</p>
+                <div id="mqube_script_779603"><a target="_blank" href="https://mqube.net/play/20181221423375">
+                        Heart-Shaped
+                        Chocolate_chordpluck/Smile storm をMQubeで確認</a></div>
+
+                <script src="https://mqube.net/item/api.js?id=mqube_script_779603&code=20181221423375" async></script>
+
+                <h2 id="-44">最後に</h2>
+                <p>いかがでしたか？ ここまでめちゃくちゃ長い文章とめちゃくちゃ長い動画にお付き合いいただき、ありがとうございます。
+                    音作りは、曲にその人の個性が表れるようになったり、制作する曲の幅を広げたりできます。その第一歩を、この記事でアシストできていたら、私は嬉しいです。</p>
+                <p>それでは、残りわずかのソフメアドベントカレンダー、最後まで楽しみましょう！ 以上、Smile stormでした。</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        footer('../../');
+    </script>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop">
+            <i class="icon-chevron-thin-up"></i>
+        </a>
+    </div>
+
+    <script src="/js/scripts.min.js"></script>
+    <script src="/js/main.min.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>

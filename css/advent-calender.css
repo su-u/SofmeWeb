@@ -229,4 +229,12 @@ table tbody tr td img.icon {
     margin: 0 10px;
   }
 }
+
+.item .img-responsive.frame {
+  display: block;
+  max-width: 100%;
+  height: 360px;
+  padding-right: 0;
+  padding-left: 0;
+}
 /*# sourceMappingURL=advent-calender.css.map */
