@@ -27,7 +27,7 @@ table thead th {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table thead th {
     display: none;
   }
@@ -38,7 +38,7 @@ table .date {
   font-weight: 600;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .date {
     width: auto;
     margin-top: 40px;
@@ -46,7 +46,7 @@ table .date {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .color {
     background-color: #52a747;
     border-radius: 5px;
@@ -55,6 +55,7 @@ table .date {
 
 table .title {
   width: 62%;
+  margin-left: 30px;
 }
 
 table .title a {
@@ -71,7 +72,7 @@ table .title a:focus {
   text-decoration: none;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .title {
     width: auto;
   }
@@ -81,24 +82,9 @@ table .icon {
   width: 5%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table .icon {
     width: auto;
-  }
-}
-
-table tbody tr td {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  margin: 30px 30px;
-  max-width: 640px;
-  word-break: break-all;
-}
-
-@media screen and (max-width: 414px) {
-  table tbody tr td {
-    border: none;
-    margin: 5px 10px;
-    display: block;
   }
 }
 
@@ -107,7 +93,7 @@ table tr td {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tr td {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -121,11 +107,11 @@ table tbody .icon {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tbody .icon {
     width: auto;
     display: inline;
-    margin-left: 5px;
+    margin-left: 30px;
   }
 }
 
@@ -133,7 +119,7 @@ table tbody .author {
   width: 20%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tbody .author {
     width: auto;
     display: inline;
@@ -141,10 +127,29 @@ table tbody .author {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
   table tbody tr {
     margin-bottom: 20px;
   }
+}
+
+table tbody tr td {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 30px 30px;
+  max-width: 640px;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 640px) {
+  table tbody tr td {
+    border: none;
+    margin: 5px 10px;
+    display: block;
+  }
+}
+
+table tbody tr td img.icon {
+  margin-left: 0;
 }
 
 .item h1,
@@ -169,6 +174,17 @@ table tbody .author {
 
 .item h3 {
   font-size: 24px;
+}
+
+.item .half {
+  width: 49%;
+  float: left;
+}
+
+@media screen and (max-width: 640px) {
+  .item .half {
+    width: 100%;
+  }
 }
 
 .item table {
@@ -204,9 +220,21 @@ table tbody .author {
   color: #32ab84;
 }
 
-@media screen and (max-width: 414px) {
+.item a {
+  color: #38a98b;
+}
+
+@media screen and (max-width: 640px) {
   .item {
     margin: 0 10px;
   }
+}
+
+.item .img-responsive.frame {
+  display: block;
+  max-width: 100%;
+  height: 360px;
+  padding-right: 0;
+  padding-left: 0;
 }
 /*# sourceMappingURL=advent-calender.css.map */

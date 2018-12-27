@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@cit_sofume" />
+        <meta property="og:url" content="http://softmedia.sakura.ne.jp/" />
+        <meta property="og:title" content="ソフトメディア研究会" />
+        <meta
+            property="og:description"
+            content="SoftMedia Official Site | CIT"
+        />
+        <meta
+            property="og:image"
+            content="http://softmedia.sakura.ne.jp/img/logo/png"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ソフトメディア研究会</title>
+        <link
+            rel="shortcut icon"
+            href="/img/favicon.ico"
+            type="image/vnd.microsoft.icon"
+        />
+        <meta name="description" content="ソフトメディア研究会" />
+        <meta name="keywords" content="ソフメ,ソフトメディア研究会,sofme" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/styles-merged.css" />
+        <link rel="stylesheet" href="/css/style.min.css" />
+        <link rel="stylesheet" href="/css/custom.css" />
+        <link rel="stylesheet" href="/css/advent-calender.css" media="screen" />
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5shiv.min.js"></script>
+            <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+        <script
+            type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+        ></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+        <script type="text/javascript" src="/js/analytics.js"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            header('../../');
+        </script>
+
+        <section class="probootstrap-slider flexslider">
+            <ul class="slides">
+                <li
+                    style="background-image: url(/img/person_1.jpg);"
+                    class="overlay2"
+                >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div
+                                    class="slides-text probootstrap-animate"
+                                    data-animate-effect="fadeIn"
+                                >
+                                    <h2>MarkDownについて</h2>
+                                    <p>すー</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- END section -->
+        <section class="probootstrap-section">
+            <div class="container">
+                <div class="item">
+                    <h1 id="markdown-">MarkDown 記法についての説明</h1>
+                    <!-- TOC -->
+                    <ul>
+                        <li>
+                            <a href="#markdown-記法についての説明"
+                                >MarkDown 記法についての説明</a
+                            >
+                            <ul>
+                                <li>
+                                    <a href="#マークダウンmarkdownとは"
+                                        >マークダウン(MarkDown)とは？</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#markdown-記法">MarkDown 記法</a>
+                                    <ul>
+                                        <li><a href="#見出し">見出し</a></li>
+                                        <li><a href="#強調">強調</a></li>
+                                        <li>
+                                            <a href="#取り消し線">取り消し線</a>
+                                        </li>
+                                        <li><a href="#引用">引用</a></li>
+                                        <li><a href="#水平線">水平線</a></li>
+                                        <li>
+                                            <a href="#リスト番号無し"
+                                                >リスト(番号無し)</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#リスト番号あり"
+                                                >リスト(番号あり)</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#テーブル">テーブル</a>
+                                        </li>
+                                        <li><a href="#リンク">リンク</a></li>
+                                        <li><a href="#コード">コード</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#例">例</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- /TOC -->
+                    <h2 id="-markdown-">マークダウン(MarkDown)とは？</h2>
+                    <blockquote>
+                        <p>
+                            Markdown
+                            は、文書を記述するための軽量マークアップ言語のひとつである。
+                            「書きやすくて読みやすいプレーンテキストとして記述した文書を、妥当な
+                            XHTML(もしくは
+                            HTML)文書へと変換できるフォーマット」として、ジョン・グル―バー(John
+                            Gruber)とアーロン・スワーツ(Aaron
+                            Swartz)によって考案された。 Markdown
+                            の記法の多くは、電子メールにおいてプレーンテキストを装飾する際の慣習から着想を得ている。
+                            <a href="https://ja.wikipedia.org/wiki/Markdown"
+                                >Markdown wikipedia</a
+                            >
+                        </p>
+                    </blockquote>
+                    <p>
+                        マークダウンとは文章を作成するときに利用される軽量なマークアップ言語です。
+                        汎用性が高く、様々な場面で利用されています。HTML
+                        に変換するのが簡単なので今回採用しました。 文章に
+                        MarkDown
+                        記法の記号を入れることによって文章構造を作成します。
+                    </p>
+                    <h2 id="markdown-">MarkDown 記法</h2>
+                    <h3 id="-">見出し</h3>
+                    <pre><code>
+# 見出し1
+## 見出し2
+### 見出し3
+                        </code></pre>
+                    <p>結果</p>
+                    <blockquote>
+                        <h1 id="-1">見出し 1</h1>
+                        <h2 id="-2">見出し 2</h2>
+                        <h3 id="-3">見出し 3</h3>
+                    </blockquote>
+                    <h3 id="-">強調</h3>
+                    <pre><code>
+*em*
+**strong**
+                        </code></pre>
+                    <p>結果</p>
+                    <blockquote>
+                        <p><em>em</em><br /><strong>strong</strong></p>
+                    </blockquote>
+                    <h3 id="-">取り消し線</h3>
+                    <pre><code>~~とりけしー~~
+                        </code></pre>
+                    <blockquote>
+                        <p><del>とりけしー</del></p>
+                    </blockquote>
+                    <h3 id="-">引用</h3>
+                    <pre><code>
+&gt; 引用テキスト
+                        </code></pre>
+                    <blockquote>
+                        <blockquote>
+                            <p>引用テキスト</p>
+                            <p>引用テキスト</p>
+                        </blockquote>
+                    </blockquote>
+                    <h3 id="-">水平線</h3>
+                    <pre><code>---
+                        </code></pre>
+                    <blockquote><hr /></blockquote>
+                    <h3 id="-">リスト(番号無し)</h3>
+                    <pre><code>
+-   リスト 1
+-   リスト 2
+-   リスト 3
+                        </code></pre>
+                    <blockquote>
+                        <ul>
+                            <li>リスト 1</li>
+                            <li>リスト 2</li>
+                            <li>リスト 3</li>
+                        </ul>
+                    </blockquote>
+                    <h3 id="-">リスト(番号あり)</h3>
+                    <pre><code>
+1.リスト 1 
+1.リスト 2 
+1.リスト 3
+                        </code></pre>
+                    <blockquote>
+                        <ol>
+                            <li>リスト 1</li>
+                            <li>リスト 2</li>
+                            <li>リスト 3</li>
+                        </ol>
+                    </blockquote>
+                    <h3 id="-">テーブル</h3>
+                    <pre><code>
+| A 列 | B 列 | C 列 | D 列 | E 列 |
+| ---- | :--: | ---- | ---: | ---- |
+| あ   |  い  | う   |   え | お   |
+| か   |  き  | く   |   け | こ   |
+| さ   |  し  | す   |   せ | そ   |
+                        </code></pre>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>A 列</th>
+                                <th style="text-align:center">B 列</th>
+                                <th>C 列</th>
+                                <th style="text-align:right">D 列</th>
+                                <th>E 列</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>あ</td>
+                                <td style="text-align:center">い</td>
+                                <td>う</td>
+                                <td style="text-align:right">え</td>
+                                <td>お</td>
+                            </tr>
+                            <tr>
+                                <td>か</td>
+                                <td style="text-align:center">き</td>
+                                <td>く</td>
+                                <td style="text-align:right">け</td>
+                                <td>こ</td>
+                            </tr>
+                            <tr>
+                                <td>さ</td>
+                                <td style="text-align:center">し</td>
+                                <td>す</td>
+                                <td style="text-align:right">せ</td>
+                                <td>そ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 id="-">リンク</h3>
+                    <pre><code>
+[Google](https://www.google.co.jp/)
+                        </code></pre>
+                    <blockquote>
+                        <p><a href="https://www.google.co.jp/">Google</a></p>
+                    </blockquote>
+                    <h3 id="-">コード</h3>
+                    <pre><code>
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;タイトル&lt;/h1&gt;
+        &lt;p&gt;テキスト&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+```
+                        </code></pre>
+                    <h2 id="-">例</h2>
+                    <pre><code>
+# タイトル
+
+## 今日の学食
+
+今日食べたものリスト
+
+-   ランチ
+-   味噌**ラーメン**
+-   クレープ
+
+飲み物リスト
+1. お茶
+1. 水
+1. お湯
+
+---
+
+### 新習志野
+
+| A 列 | B 列 |
+| ---- | :--:|
+| 1階   |  食堂  |
+| 2階   |  食堂  |
+| 3階   |  ホール  |
+                        </code></pre>
+                    <p>を書くと以下のページになります。</p>
+                    <p><a href="12-test.html">リンク</a></p>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            footer('../../');
+        </script>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop">
+                <i class="icon-chevron-thin-up"></i>
+            </a>
+        </div>
+
+        <script src="/js/scripts.min.js"></script>
+        <script src="/js/main.min.js"></script>
+        <script src="/js/custom.js"></script>
+    </body>
+</html>

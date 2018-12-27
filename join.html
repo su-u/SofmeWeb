@@ -1,127 +1,181 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ソフトメディア研究会</title>
+        <link
+            rel="shortcut icon"
+            href="img/favicon.ico"
+            type="image/vnd.microsoft.icon"
+        />
+        <meta name="description" content="ソフトメディア研究会" />
+        <meta name="keywords" content="ソフメ,ソフトメディア研究会,sofme" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ソフトメディア研究会</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
-  <meta name="description" content="ソフトメディア研究会">
-  <meta name="keywords" content="ソフメ,ソフトメディア研究会,sofme">
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles-merged.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles-merged.css">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/custom.css">
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5shiv.min.js"></script>
+            <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+        <script
+            type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+        ></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/analytics.js"></script>
+    </head>
 
-  <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/common.js"></script>
-  <script type="text/javascript" src="js/analytics.js"></script>
-</head>
+    <body>
+        <script type="text/javascript">
+            header('./');
+        </script>
+        <section class="probootstrap-slider flexslider">
+            <ul class="slides">
+                <li
+                    style="background-image: url(./img/welcome.jpg);"
+                    class="overlay2"
+                >
+                    <div class="container join">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div
+                                    class="slides-text probootstrap-animate"
+                                    data-animate-effect="fadeIn"
+                                >
+                                    <h2>新入生向けページ</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- END: slider -->
 
-<body>
-  <script type="text/javascript">header('./');</script>
-  <section class="probootstrap-slider flexslider">
-    <ul class="slides">
-      <li style="background-image: url(./img/welcome.jpg);" class="overlay2">
-        <div class="container join">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
-                <h2>新入生向けページ</h2>
-                <p>
-              </div>
+        <section class="probootstrap-section">
+            <div class="container container-join">
+                <div class="row">
+                    <h2 class="border">ソフトメディア研究会とは？</h2>
+                    <p>
+                        千葉工業大学公認サークルです。パソコンを中心に使って創作活動を行うサークルで、
+                        <strong>プログラム班</strong>、
+                        <strong>マルチメディア班</strong>、
+                        <strong>DTM班</strong>の３つがあります。
+                        毎年、5月に行われる文化の祭典、11月の津田沼祭にて作品を展示します。
+                    </p>
+
+                    <h2 class="border">新入生歓迎会のお知らせ</h2>
+                    <!-- 予定が決まったら２、未定の場合は１ -->
+                    <!--
+                        １↓
+                        <p>20XX年4月ごろに津田沼キャンパス食堂またはその他会場で行う予定です！</p>
+
+                        ２↓
+                        <p>20XX年X月X日（X曜日）Xにて行います！</p>
+                    -->
+                    <p>
+                        2019年4月ごろに津田沼キャンパス食堂またはその他会場で行う予定です！
+                    </p>
+                    <p>気になっている人は是非来てください！！</p>
+
+                    <p></p>
+                    <h2 class="border">プログラム班</h2>
+                    <p>プログラム班は、主にゲームの制作を行っています。</p>
+                    <p>
+                        プログラムをやったことある方も、やったことがない方も大歓迎です。
+                    </p>
+                    <p>詳しい流れはプログラム班のページをご覧ください。</p>
+                    <p>
+                        <a
+                            href="program/index.html"
+                            target="_blank"
+                            role="button"
+                            class="btn btn-primary btn-sm"
+                            >プログラム班ページへ</a
+                        >
+                    </p>
+                    <h2 class="border">マルチメディア班</h2>
+                    <p>
+                        Multi（多）Media（情報媒体）を用いて自己の表現を行う集まりです。
+                    </p>
+                    <p>
+                        CG , Flash ,
+                        Animation，etc…表現方法はいくつもあります。班員は自分に合う表現方法を自由に選んで津田沼祭で展示したりゲームのイラストとして使ったりしています。
+                    </p>
+                    <p>
+                        入部するほとんどの人が初心者です。講座や経験者と交流し初心者からでも始められる環境が整ってので是非参加してみてください。
+                    </p>
+                    <p>
+                        <a
+                            href="multi/index.html"
+                            target="_blank"
+                            role="button"
+                            class="btn btn-primary btn-sm"
+                            >マルチメディア班ページへ</a
+                        >
+                    </p>
+                    <h2 class="border">DTM班</h2>
+                    <p>
+                        PC上でDAWという作曲ソフトを使い、作曲を行います。年に2回の同人音楽即売会や『文化の祭典』『千葉工業大学祭』向けて曲を作り展示します。
+                    </p>
+                    <p>
+                        <a
+                            href="dtm/index.html"
+                            target="_blank"
+                            role="button"
+                            class="btn btn-primary btn-sm"
+                            >DTM班ページへ</a
+                        >
+                    </p>
+                    <h2 class="border">部会</h2>
+                    <p>
+                        <strong>毎週水曜日午後6:45</strong
+                        >から部会があります。行事の人員を選出したり、設備購入等の議決を取ったり、重要な事を話し合います。教室は月によって変わります。
+                        教室の連絡は部室前か公式ツイッターで連絡するので見てみてください。ソフメに興味ある人は是非来てみてください！
+                    </p>
+                    <h2 class="border">部費</h2>
+                    <ul>
+                        <li>入部費：500円</li>
+                        <li>半年費用：3000円</li>
+                    </ul>
+                    <h2 class="border">部室</h2>
+                    津田沼校舎４号館９階０６室です。
+                    <img
+                        src="img/sofmap.gif"
+                        class="img-responsive img-border"
+                        alt="ソフマップ"
+                    />
+                    <!-- <h2 class="border">年間予定</h2> -->
+                    <h2 class="border">お問い合わせ</h2>
+                    <p>
+                        質問などありましたらお気軽に
+                        <a href="https://goo.gl/forms/iQeGhq0lzoOo8Bpk1"
+                            >お問い合わせ箱</a
+                        >、または <strong>citsofme(at)gmail.com</strong>まで
+                    </p>
+                </div>
             </div>
-          </div>
+        </section>
+
+        <script type="text/javascript">
+            footer('./');
+        </script>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop">
+                <i class="icon-chevron-thin-up"></i>
+            </a>
         </div>
-      </li>
-    </ul>
-  </section>
-  <!-- END: slider  -->
 
-  <section class="probootstrap-section">
-    <div class="container container-join">
-      <div class="row">
-
-        <h2 class="border">ソフトメディア研究会とは？</h2>
-        <p>千葉工業大学公認サークルです。パソコンを中心に使って創作活動を行うサークルで、
-          <strong>プログラム班</strong>、
-          <strong>マルチメディア班</strong>、
-          <strong>DTM班</strong>の３つがあります。 毎年、5月に行われる文化の祭典、11月の津田沼祭にて作品を展示します。
-        </p>
-
-
-        <h2 class="border">新入生歓迎会のお知らせ</h2>
-        <!--予定が決まったら２、未定の場合は１-->
-        <!--
-        １↓
-        <p>20XX年4月ごろに津田沼キャンパス食堂またはその他会場で行う予定です！</p>
-        
-        ２↓
-        <p>20XX年X月X日（X曜日）Xにて行います！</p>
-        -->
-        <p>2019年4月ごろに津田沼キャンパス食堂またはその他会場で行う予定です！</p>
-        <p>気になっている人は是非来てください！！</p>
-
-        <p>
-          <h2 class="border">プログラム班</h2>
-          <p>プログラム班は、主にゲームの制作を行っています。</p>
-          <p>プログラムをやったことある方も、やったことがない方も大歓迎です。</p>
-          <p>詳しい流れはプログラム班のページをご覧ください。</p>
-          <p>
-            <a href="program/index.html" target="_blank" role="button" class="btn btn-primary btn-sm">プログラム班ページへ</a>
-          </p>
-          <h2 class="border">マルチメディア班</h2>
-          <p>Multi（多）Media（情報媒体）を用いて自己の表現を行う集まりです。</p>
-          <p>CG , Flash , Animation，etc…表現方法はいくつもあります。班員は自分に合う表現方法を自由に選んで津田沼祭で展示したりゲームのイラストとして使ったりしています。</p>
-          <p>入部するほとんどの人が初心者です。講座や経験者と交流し初心者からでも始められる環境が整ってので是非参加してみてください。</p>
-          <p>
-            <a href="multi/index.html" target="_blank" role="button" class="btn btn-primary btn-sm">マルチメディア班ページへ</a>
-          </p>
-          <h2 class="border">DTM班</h2>
-          <p>PC上でDAWという作曲ソフトを使い、作曲を行います。年に2回の同人音楽即売会や『文化の祭典』『千葉工業大学祭』向けて曲を作り展示します。
-          </p>
-          <p>
-            <a href="dtm/index.html" target="_blank" role="button" class="btn btn-primary btn-sm">DTM班ページへ</a>
-          </p>
-          <h2 class="border">部会</h2>
-          <p>
-            <strong>毎週水曜日午後6:45</strong>から部会があります。行事の人員を選出したり、設備購入等の議決を取ったり、重要な事を話し合います。教室は月によって変わります。 教室の連絡は部室前か公式ツイッターで連絡するので見てみてください。ソフメに興味ある人は是非来てみてください！
-          </p>
-          <h2 class="border">部費</h2>
-          <ul>
-            <li>入部費：500円</li>
-            <li>半年費用：3000円</li>
-          </ul>
-          <h2 class="border">部室</h2>
-          津田沼校舎４号館９階０６室です。
-          <img src="img/sofmap.gif" class="img-responsive img-border" alt="ソフマップ">
-          <!-- <h2 class="border">年間予定</h2> -->
-          <h2 class="border">お問い合わせ</h2>
-          <p>質問などありましたらお気軽に
-            <a href="https://goo.gl/forms/iQeGhq0lzoOo8Bpk1">お問い合わせ箱</a>、または
-            <strong>citsofme(at)gmail.com</strong>まで</p>
-      </div>
-    </div>
-  </section>
-
-
-  <script type="text/javascript">footer('./');</script>
-
-  <div class="gototop js-top">
-    <a href="#" class="js-gotop">
-      <i class="icon-chevron-thin-up"></i>
-    </a>
-  </div>
-
-
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
-</body>
-
+        <script src="js/scripts.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>
