@@ -1,4 +1,5 @@
-﻿/* Your custom css code goes here */
+﻿@import url("dtm.css");
+/* Your custom css code goes here */
 /* index.html */
 
 body {
