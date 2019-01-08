@@ -1,6 +1,6 @@
 ﻿@import url("dtm.css");
 /* Your custom css code goes here */
-/* index.html */
+/* top */
 
 body {
     font-size: 20px;
@@ -73,7 +73,7 @@ body {
 }
 
 .col-md-6 {
-    width: 100%;
+    /* width: 100%; */
 }
 
 #join.service {
