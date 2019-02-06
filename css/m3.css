@@ -1,0 +1,23 @@
+.soundcloud-play {
+  margin-bottom: 20px;
+}
+
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+table thead th {
+  color: #2e7d32 !important;
+}
+
+table tr td {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 5px;
+}
+
+table .no {
+  width: 20%;
+}
+/*# sourceMappingURL=m3.css.map */
