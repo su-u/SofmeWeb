@@ -442,15 +442,20 @@ a.multi-study {
     width: 18%;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 20px;
     /* background-color: #f0f0f0; */
 }
 
 .member-text .name {
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .multi-member-grade {
+    padding-bottom: 10px;
+    padding-left: 10px;
     border-bottom: dotted 2px #dacfd0;
+    margin-bottom: 2em;
 }
 
 @media screen and (max-width: 768px) {
