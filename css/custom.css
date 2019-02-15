@@ -3,9 +3,6 @@
 /* Your custom css code goes here */
 /* top */
 
-body {
-    font-size: 20px;
-}
 @media screen and (max-width: 640px) {
     body {
         font-size: 16px;
@@ -199,6 +196,7 @@ body {
     border-bottom: 1px solid #000;
     border-left: 10px solid #000;
     padding: 10px;
+    clear: both;
 }
 
 @media screen and (max-width: 768px) {
@@ -440,8 +438,8 @@ a.multi-study {
 
 .member {
     width: 18%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
     margin-bottom: 20px;
     /* background-color: #f0f0f0; */
 }
@@ -479,7 +477,7 @@ a.multi-study {
 }
 
 .message {
-    color: #ccc;
+    color: #bbb;
     font-size: 80%;
     line-height: 1.2em;
 }
