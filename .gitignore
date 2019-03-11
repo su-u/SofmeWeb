@@ -6,3 +6,4 @@
 *.mp3
 /files
 deploy.php
+_archives/*
