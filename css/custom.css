@@ -28,6 +28,15 @@
     }
 }
 
+.header-icon{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.probootstrap-logo{
+   padding: 5px 10px;
+}
 
 
 .probootstrap-burger-menu {
