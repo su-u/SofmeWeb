@@ -6,7 +6,7 @@ $(document).ready(function ($) {
         buttons: true,
         waitForLayers: true,
         autoplay: true,
-        touchSwipe: false,
+        touchSwipe: true,
         autoplayDelay: 5000,
         autoScaleLayers: true,
         responsive: true,

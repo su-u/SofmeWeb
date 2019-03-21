@@ -1,29 +1,27 @@
-function header(rootDirectory){
+function header() {
     $.ajax({
-        url: rootDirectory + "common/header.html", // ディレクトリー変更
+        url: "/common/header.html", // ディレクトリー変更
         cache: false,
         async: false,
         dataType: 'html',
-        success: function(html){
-            html = html.replace(/\{\$root\}/g, rootDirectory); 
+        success: function (html) {
             document.write(html);
         }
     });
 }
 
-function footer(rootDirectory){
+function footer() {
     $.ajax({
-        url: rootDirectory + "common/footer.html", // ディレクトリー変更
+        url: "/common/footer.html", // ディレクトリー変更
         cache: false,
         async: false,
         dataType: 'html',
-        success: function(html){
-            html = html.replace(/\{\$root\}/g, rootDirectory); 
+        success: function (html) {
             document.write(html);
         }
     });
 }
 
-$('#join').on('click',function(){
+$('#join').on('click', function () {
     console.log('boxをクリックしました！');
-  });
+});
