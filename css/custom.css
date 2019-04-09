@@ -287,10 +287,6 @@
 }
 
 /* /program/p-study.html */
-a.p-study {
-    color: #000000;
-    text-decoration: underline;
-}
 
 .p-product-wrapper {
     display: flex;
@@ -402,10 +398,7 @@ a.p-study {
     padding-left: 15px;
 }
 /* /multi/multi-study.html */
-a.multi-study {
-    color: #000000;
-    text-decoration: underline;
-}
+
 
 /* /multi/multi-member.html */
 
@@ -513,3 +506,36 @@ a.multi-study {
         margin-bottom: 10px;
     }
 }
+
+/* linkColor */
+
+a.program-linkColor {
+    color: #000;
+    text-decoration: underline;
+}
+
+a.program-linkColor:hover {
+    color: rgb(16, 158, 127);
+    text-decoration: underline;
+}
+
+a.dtm-linkColor {
+    color: #000;
+    text-decoration: underline;
+}
+
+a.dtm-linkColor:hover {
+    color: rgb(81, 58, 212);
+    text-decoration: underline;
+}
+
+a.multi-linkColor {
+    color: #000;
+    text-decoration: underline;
+}
+
+a.multi-linkColor:hover {
+    color: rgb(221, 40, 40);
+    text-decoration: underline;
+}
+
