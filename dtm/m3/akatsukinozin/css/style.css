@@ -3,18 +3,18 @@ img.main {
 }
 
 img.album_jacket {
-    max-width: 250px;
-    
+    width: 250px;
+    height: auto;
 }
 
 p {
-    font-size: 100px;
+    font-size: 20px;
 }
 
 p.album_title {
-    font-size: 30px;
+    font-size: 20px;
     float: left;
-    margin: auto;
+    margin: 100px 10px 0px;
 }
 
 header {
@@ -22,12 +22,30 @@ header {
 }
 
 h1 {
-    margin: auto;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1.title {
+    margin: 0px;
+    text-align: left;
     font-size: 100px;
 }
 
-div.album_informatin {
-    max-width: 360px;
-    background-color: blue;
+div.album_information {
+    max-width: 640px;
     float: left;
+    padding: 0px 20px;
+}
+
+div.maincontent {
+    max-width: 1280px;
+    margin: auto;
+}
+
+section.album {
+    width: 960px;
+    overflow: hidden;
+    margin: auto;
 }
