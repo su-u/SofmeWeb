@@ -1,0 +1,33 @@
+img.main {
+    max-width: 100%;
+}
+
+img.album_jacket {
+    max-width: 250px;
+    
+}
+
+p {
+    font-size: 100px;
+}
+
+p.album_title {
+    font-size: 30px;
+    float: left;
+    margin: auto;
+}
+
+header {
+    background-color: red;
+}
+
+h1 {
+    margin: auto;
+    font-size: 100px;
+}
+
+div.album_informatin {
+    max-width: 360px;
+    background-color: blue;
+    float: left;
+}
