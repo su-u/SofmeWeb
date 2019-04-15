@@ -1,3 +1,7 @@
+body {
+    /* background-image: url("../image/akatsukinozin_vol1_header.jpg"); */
+}
+
 img.main {
     max-width: 100%;
 }
@@ -22,16 +26,26 @@ header {
 }
 
 h1 {
-    margin: 10px 0px;
-    text-align: center;
-    font-size: 40px;
+    font-size: 80px;
 }
 
 h1.title {
-    margin: 0px;
+    margin-top: 50px;
+    margin-left: 200px; 
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-right: 40px;
     text-align: left;
     font-size: 100px;
+    float: left;
 }
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
 
 div.album_information {
     max-width: 640px;
@@ -44,8 +58,47 @@ div.maincontent {
     margin: auto;
 }
 
+section.event_informetion {
+    overflow: hidden;
+    margin:  60px 0;
+}
+
 section.album {
     width: 960px;
     overflow: hidden;
     margin: auto;
+}
+
+section.playlist {
+    overflow: hidden;
+}
+
+div.track_wrap {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 1020px;
+}
+
+table.track {
+    width: 500px;
+    background-color: rgba(110, 106, 104, 0.198);
+    float: left;
+}
+
+table.track th, td {
+    text-align: left;
+    font-size: 20px;
+    padding: 2px 10px;
+}
+
+table.holding_information{
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: red;
+    padding: 20px 0px 50px;
 }
