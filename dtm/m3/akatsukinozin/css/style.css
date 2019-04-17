@@ -1,7 +1,7 @@
 body {
     background-image: url("../image/akatsukinozin_vol1_header.jpg");
     background-repeat: repeat;
-    background-position: 50%;
+    background-position: 50% 80%;
 }
 
 img.main {
@@ -11,6 +11,7 @@ img.main {
 img.album_jacket {
     width: 250px;
     height: auto;
+    text-align: center;
 }
 
 p {
@@ -18,9 +19,8 @@ p {
 }
 
 p.album_title {
-    font-size: 20px;
-    float: left;
-    margin: 100px 10px 0px;
+    margin: 10px 20px 0px;
+    text-align: center;
 }
 
 p.footer {
@@ -30,22 +30,28 @@ p.footer {
 }
 
 header {
-    background-color: rgb(235, 38, 87);
+    background-color: rgba(0, 0, 0);
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
+}
+
+h1.sofme {
+    color: rgb(172, 172, 172);
 }
 
 h1.title {
     margin-top: 50px;
-    margin-left: 80px; 
+    margin-left: 60px; 
     margin-right: 50px;
     margin-bottom: 50px;
-    padding-right: 40px;
+    padding-right: 30px;
     text-align: left;
-    font-size: 100px;
+    font-size: 110px;
     float: left;
+    color: white;
+    font-family: 'HGP行書体', '游明朝';
 }
 
 h2 {
@@ -56,10 +62,15 @@ h2 {
 
 div.maincontent {
     margin: auto;
-    background-color: rgba(118, 114, 134, 0.479);
+    background-color: rgba(64, 60, 78, 0.685);
 }
 
 div.event_informetion {
+    padding: 280px 0;
+    background-color: rgba(19, 16, 20, 0.774);
+}
+
+div.event_informetion_cover {
     overflow: hidden;
     width: 1024px;
     margin: auto;
@@ -70,15 +81,26 @@ div.album_wrap {
     padding: 40px 0;
 }
 
+div.album_information_wrap {
+    width: 1024px;
+    overflow: hidden;
+    margin: auto;
+}
+
+div.img_jacket {
+    text-align: center;
+}
+
 div.album_information {
-    width: 510px;
+    width: 451px;
+    padding: 0 30px;
     float: left;
 }
 
 div.crossfade {
     width: 960px;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 
 div.track_wrap {
@@ -91,12 +113,24 @@ div.track_wrap {
 
 div.staff_wrap {
     margin: auto;
-    background-color: rgba(253, 253, 253, 0.9); 
+    background-color: rgba(253, 253, 253, 0.85); 
     border: solid rgb(221, 221, 221);
     border-width: 1px;
-    width: 980px;
-    padding: 40px;
-    padding-bottom: 50px;
+    width: 1278px;
+    padding: 50px 0 60px;
+}
+
+@media screen and (max-width:1300px){
+
+    div.staff_wrap {
+        margin: auto;
+        background-color: rgba(253, 253, 253, 0.85); 
+        border: solid rgb(221, 221, 221);
+        border-width: 1px;
+        width: 1022px;
+        padding: 50px 0 60px;
+    }
+
 }
 
 div.icon_wrap {
@@ -109,20 +143,39 @@ section {
 }
 
 section.event_informetion {
+    background-image: url("../image/akatsukinozin_vol2_jacket.png");
+    background-position: 40% 40%;
+    background-attachment: fixed;
+    margin: 0;
     overflow: hidden;
-    margin: 0 0 60px;
-    background-color: rgba(58, 50, 61, 0.527);
-    padding: 100px 0;
 }
 
 section.album {
-    width: 1024px;
+    width: 1278px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(253, 253, 253, 0.9); 
+    margin-top: 60px;
+    background-color: rgba(253, 253, 253, 0.85); 
     border: solid rgb(221, 221, 221);
     border-width: 1px;
+    padding: 10px 0 30px;
+}
+
+@media screen and (max-width:1300px){
+
+    section.album {
+        width: 1022px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        background-color: rgba(253, 253, 253, 0.85); 
+        border: solid rgb(221, 221, 221);
+        border-width: 1px;
+        padding: 10px 0 30px;
+    }
+
 }
 
 section.credit {
@@ -135,14 +188,32 @@ table.track {
     float: left;
 }
 
-th, td {
+table.holding_information td {
+    text-align: left;
+    font-size: 20px;
+    padding: 7px 10px 0;
+    color: white;
+}
+
+table.track th, td {
     text-align: left;
     font-size: 20px;
     padding: 5px 10px;
 }
 
-tr:hover {
-    transition-duration:0.5s;
+table.track th.CDtitle {
+    padding: 20px 10px;
+    font-size: 30px; 
+}
+
+table.track tr:hover {
+    transition-duration:0.3s;
+    background-color: rgb(235, 38, 87);
+    color: white;
+}
+
+table.staff tr:hover {
+    transition-duration:0.3s;
     background-color: rgb(235, 38, 87);
     color: white;
 }
@@ -154,16 +225,16 @@ table.holding_information{
 table.staff {
     margin: auto;
 }
-th.CDtitle {
-    padding: 10px 10px 20px;
-    font-size: 30px; 
-}
 
 footer {
     text-align: center;
     overflow: hidden;
     background-color: rgb(235, 38, 87);
-    padding: 30px 0px 60px;
+    padding: 50px 0px 50px;
+}
+
+a.sofme {
+    text-decoration: none;
 }
 
 a.icon {
