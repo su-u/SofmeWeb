@@ -1,5 +1,5 @@
 body {
-    /* background-image: url("../image/akatsukinozin_vol1_header.jpg"); */
+     background-image: url("../image/akatsukinozin_vol1_header.jpg"); 
 }
 
 img.main {
@@ -90,6 +90,13 @@ div.track_wrap {
     background-color: rgba(243, 243, 243, 0.733);
 }
 
+div.staff_wrap {
+    margin: auto;
+    background-color: rgba(243, 243, 243, 0.733); 
+    width: 980px;
+    padding: 20px;
+}
+
 table.track {
     width: 490px;
     /*background-color: rgba(110, 106, 104, 0.198);*/
@@ -106,6 +113,9 @@ table.holding_information{
     margin-top: 50px;
 }
 
+table.staff {
+    margin: auto;
+}
 th.CDtitle {
     padding: 10px 10px 20px;
     font-size: 30px; 
