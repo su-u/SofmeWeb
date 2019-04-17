@@ -83,11 +83,15 @@ div.track_wrap {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 1020px;
+    width: 980px;
+    padding: 20px;
+    border: solid rgb(221, 221, 221);
+    border-width: 1px;
+    background-color: rgba(243, 243, 243, 0.733);
 }
 
 table.track {
-    width: 500px;
+    width: 490px;
     /*background-color: rgba(110, 106, 104, 0.198);*/
     float: left;
 }
@@ -103,7 +107,7 @@ table.holding_information{
 }
 
 th.CDtitle {
-    padding-bottom: 10px;
+    padding: 10px 10px 20px;
     font-size: 30px; 
 }
 
