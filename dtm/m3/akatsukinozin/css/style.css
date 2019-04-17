@@ -1,5 +1,7 @@
 body {
-     background-image: url("../image/akatsukinozin_vol1_header.jpg"); 
+    background-image: url("../image/akatsukinozin_vol1_header.jpg");
+    background-repeat: repeat;
+    background-position: 50%;
 }
 
 img.main {
@@ -21,8 +23,14 @@ p.album_title {
     margin: 100px 10px 0px;
 }
 
+p.footer {
+    color: white;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
 header {
-    background-color: red;
+    background-color: rgb(235, 38, 87);
 }
 
 h1 {
@@ -31,7 +39,7 @@ h1 {
 
 h1.title {
     margin-top: 50px;
-    margin-left: 200px; 
+    margin-left: 80px; 
     margin-right: 50px;
     margin-bottom: 50px;
     padding-right: 40px;
@@ -42,71 +50,101 @@ h1.title {
 
 h2 {
     text-align: center;
-    font-size: 40px;
-    margin: 20px 0px;
-}
-
-
-div.album_information {
-    max-width: 640px;
-    float: left;
-    padding: 0px 20px;
+    font-size: 50px;
+    margin: 10px 0px 40px;
 }
 
 div.maincontent {
-    max-width: 1280px;
+    margin: auto;
+    background-color: rgba(118, 114, 134, 0.479);
+}
+
+div.event_informetion {
+    overflow: hidden;
+    width: 1024px;
     margin: auto;
 }
 
-section {
-    margin: 60px 0;
-}
-
-section.event_informetion {
+div.album_wrap {
     overflow: hidden;
-    background-color: rgba(169, 169, 169, 0.527);
+    padding: 40px 0;
 }
 
-section.album {
+div.album_information {
+    width: 510px;
+    float: left;
+}
+
+div.crossfade {
     width: 960px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section.playlist {
-    overflow: hidden;
+    margin: auto;
+    padding: 20px 0;
 }
 
 div.track_wrap {
     overflow: hidden;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    width: 980px;
-    padding: 20px;
-    border: solid rgb(221, 221, 221);
-    border-width: 1px;
-    background-color: rgba(243, 243, 243, 0.733);
+    width: 960px;
+    padding: 50px 21px;
+    padding-left: 41px;
 }
 
 div.staff_wrap {
     margin: auto;
-    background-color: rgba(243, 243, 243, 0.733); 
+    background-color: rgba(253, 253, 253, 0.9); 
+    border: solid rgb(221, 221, 221);
+    border-width: 1px;
     width: 980px;
-    padding: 20px;
+    padding: 40px;
+    padding-bottom: 50px;
+}
+
+div.icon_wrap {
+    width: 160px;
+    margin: auto;
+}
+
+section {
+    margin: 0 0 60px;
+}
+
+section.event_informetion {
+    overflow: hidden;
+    margin: 0 0 60px;
+    background-color: rgba(58, 50, 61, 0.527);
+    padding: 100px 0;
+}
+
+section.album {
+    width: 1024px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(253, 253, 253, 0.9); 
+    border: solid rgb(221, 221, 221);
+    border-width: 1px;
+}
+
+section.credit {
+    margin: 60px 0 0;
+    padding-bottom: 60px;
 }
 
 table.track {
-    width: 490px;
-    /*background-color: rgba(110, 106, 104, 0.198);*/
+    width: 470px;
     float: left;
 }
 
 th, td {
     text-align: left;
     font-size: 20px;
-    padding: 2px 10px;
+    padding: 5px 10px;
+}
+
+tr:hover {
+    transition-duration:0.5s;
+    background-color: rgb(235, 38, 87);
+    color: white;
 }
 
 table.holding_information{
@@ -123,6 +161,12 @@ th.CDtitle {
 
 footer {
     text-align: center;
-    background-color: red;
-    padding: 20px 0px 50px;
+    overflow: hidden;
+    background-color: rgb(235, 38, 87);
+    padding: 30px 0px 60px;
+}
+
+a.icon {
+    float: left;
+    padding: 16px;
 }
