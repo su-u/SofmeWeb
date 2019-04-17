@@ -64,6 +64,7 @@ section {
 
 section.event_informetion {
     overflow: hidden;
+    background-color: rgba(169, 169, 169, 0.527);
 }
 
 section.album {
