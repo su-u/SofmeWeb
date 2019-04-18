@@ -9,23 +9,29 @@ img.main {
 }
 
 img.album_jacket {
-    width: 250px;
+    width: 300px;
     height: auto;
     text-align: center;
 }
 
+img.icon_link:hover {
+    transition-duration:0.3s;
+    opacity: 0.8;
+}
+
 p {
     font-size: 20px;
+    font-family: sans-serif;
 }
 
 p.album_title {
-    margin: 10px 20px 0px;
+    margin: 10px 20px;
     text-align: center;
 }
 
 p.footer {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px 0;
 }
 
@@ -35,10 +41,12 @@ header {
 
 h1 {
     font-size: 70px;
+    font-family: sans-serif;
 }
 
 h1.sofme {
     color: rgb(172, 172, 172);
+    padding-top: 10px;
 }
 
 h1.title {
@@ -55,7 +63,25 @@ h1.title {
     text-shadow: 0 0 10px rgb(80, 80, 80);
 }
 
+@media screen and (max-width:415px){
+    h1.title {
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
+        text-align: center;
+        font-size: 110px;
+        float: none;
+        color: white;
+        font-family: 'HGP行書体', '游明朝';
+        text-shadow: 0 0 10px rgb(80, 80, 80);
+    }
+}
+
+
 h2 {
+    font-family: sans-serif;
     text-align: center;
     font-size: 50px;
     margin: 10px 0px 40px;
@@ -67,7 +93,7 @@ div.maincontent {
 }
 
 div.event_informetion {
-    padding: 280px 0;
+    padding: 320px 0;
     background-color: rgba(19, 16, 20, 0.774);
 }
 
@@ -77,25 +103,56 @@ div.event_informetion_cover {
     margin: auto;
 }
 
+@media screen and (max-width:415px){
+    div.event_informetion_cover {
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+    }
+}
+
 div.album_wrap {
     overflow: hidden;
     padding: 40px 0;
 }
 
 div.album_information_wrap {
-    width: 1024px;
+    width: 960px;
     overflow: hidden;
     margin: auto;
 }
 
-div.img_jacket {
-    text-align: center;
+@media screen and (max-width:415px){
+    div.album_information_wrap {
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+div.holding_information {
+    margin-top: 50px;
+}
+
+@media screen and (max-width:415px){
+    div.holding_information {
+        width: 345px;
+        margin: auto;
+    }
 }
 
 div.album_information {
-    width: 451px;
-    padding: 0 30px;
+    text-align: center;
+    width: 480px;
     float: left;
+}
+
+@media screen and (max-width:415px){
+    div.album_information {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
 }
 
 div.crossfade {
@@ -132,6 +189,17 @@ div.staff_wrap {
         padding: 50px 0 60px;
     }
 
+}
+
+@media screen and (max-width:415px){
+    div.staff_wrap {
+        margin: auto;
+        background-color: rgba(253, 253, 253, 0.85); 
+        border: solid rgb(221, 221, 221);
+        border-width: 1px;
+        width: 100%;
+        padding: 50px 0 60px;
+    }
 }
 
 div.icon_wrap {
@@ -179,6 +247,20 @@ section.album {
 
 }
 
+@media screen and (max-width:415px){
+    section.album {
+        width: 100%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        background-color: rgba(253, 253, 253, 0.85); 
+        border: solid rgb(221, 221, 221);
+        border-width: 1px;
+        padding: 10px 0 30px;
+    }
+}
+
 section.credit {
     margin: 60px 0 0;
     padding-bottom: 60px;
@@ -189,11 +271,29 @@ table.track {
     float: left;
 }
 
+th, td {
+    font-family: sans-serif;
+}
+
+table.holding_information {
+    margin-left: 5px;
+}
+
 table.holding_information td {
     text-align: left;
     font-size: 20px;
     padding: 7px 10px 0;
     color: white;
+}
+
+
+@media screen and (max-width:415px){
+    table.holding_information td {
+        text-align: left;
+        font-size: 12px;
+        padding: 7px 10px 0;
+        color: white;
+    }
 }
 
 table.track th, td {
@@ -217,10 +317,6 @@ table.staff tr:hover {
     transition-duration:0.3s;
     background-color: rgb(235, 38, 87);
     color: white;
-}
-
-table.holding_information{
-    margin-top: 50px;
 }
 
 table.staff {
