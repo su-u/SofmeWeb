@@ -29,6 +29,12 @@ p.album_title {
     text-align: center;
 }
 
+p.CDtitle {
+    padding: 20px 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 p.footer {
     color: white;
     font-size: 18px;
@@ -49,6 +55,14 @@ h1.sofme {
     padding-top: 10px;
 }
 
+@media screen and (max-width:768px){
+    h1.sofme {
+        color: rgb(172, 172, 172);
+        font-size: 30px;
+        padding-top: 10px;
+    }
+}
+
 h1.title {
     margin-top: 50px;
     margin-left: 60px; 
@@ -63,7 +77,23 @@ h1.title {
     text-shadow: 0 0 10px rgb(80, 80, 80);
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    h1.title {
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
+        text-align: center;
+        font-size: 110px;
+        float: none;
+        color: white;
+        font-family: 'HGP行書体', '游明朝';
+        text-shadow: 0 0 10px rgb(80, 80, 80);
+    }
+}
+
+@media screen and (max-width:768px){
     h1.title {
         margin-left: auto;
         margin-right: auto; 
@@ -97,7 +127,7 @@ div.event_informetion {
     background-color: rgba(19, 16, 20, 0.774);
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:768px){
     div.event_informetion {
         padding: 180px 0;
         background-color: rgba(19, 16, 20, 0.774);
@@ -110,7 +140,15 @@ div.event_informetion_cover {
     margin: auto;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    div.event_informetion_cover {
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px){
     div.event_informetion_cover {
         overflow: hidden;
         width: 100%;
@@ -129,7 +167,15 @@ div.album_information_wrap {
     margin: auto;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    div.album_information_wrap {
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px){
     div.album_information_wrap {
         width: 100%;
         overflow: hidden;
@@ -141,7 +187,17 @@ div.holding_information {
     margin-top: 50px;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    div.holding_information {
+        width: 345px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:768px){
     div.holding_information {
         width: 345px;
         margin-top: 0;
@@ -157,7 +213,15 @@ div.album_information {
     float: left;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    div.album_information {
+        width: 384px;
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px){
     div.album_information {
         text-align: center;
         width: 100%;
@@ -171,11 +235,18 @@ div.crossfade {
     padding: 10px 0;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    div.crossfade {
+        width: 768px;
+        margin: auto;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:768px){
     div.crossfade {
         width: 100%;
         margin: auto;
-        padding: 20px 0 0;
     }
 }
 
@@ -187,13 +258,72 @@ div.track_wrap {
     padding-left: 41px;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
     div.track_wrap {
         overflow: hidden;
         margin: auto;
         width: 100%;
-        padding: 50px 0;
-        padding-left: 20px;
+        padding: 40px 0;  
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    div.track_wrap {
+        overflow: hidden;
+        margin: auto;
+        width: 100%;
+        padding: 40px 0;  
+        padding-left: 0;
+    }
+}
+
+div.block_track {
+    overflow: hidden;
+    float: left;
+}
+
+@media screen and (max-width:1024px){
+    div.block_track {
+        float: none;
+        max-width: 768;
+    }
+}
+
+div.Disc {
+    overflow: hidden;
+    width: 480px;
+}
+
+@media screen and (max-width:1024px){
+    div.Disc {
+        overflow: hidden;
+        width: 480px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:767px){
+    div.Disc {
+        overflow: hidden;
+        width: 480px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:480px){
+    div.Disc {
+        overflow: hidden;
+        width: 360px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:360px){
+    div.Disc {
+        overflow: hidden;
+        width: 320px;
+        margin: auto;
     }
 }
 
@@ -204,7 +334,7 @@ div.track {
     float: left;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:768px){
     div.track {
         overflow: hidden;
         padding-bottom: 20px;
@@ -235,7 +365,18 @@ div.staff_wrap {
 
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    div.staff_wrap {
+        margin: auto;
+        background-color: rgba(253, 253, 253, 0.85); 
+        border: solid rgb(221, 221, 221);
+        border-width: 1px;
+        width: 768px;
+        padding: 50px 0 60px;
+    }
+}
+
+@media screen and (max-width:768px){
     div.staff_wrap {
         margin: auto;
         background-color: rgba(253, 253, 253, 0.85); 
@@ -291,7 +432,21 @@ section.album {
 
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:1024px){
+    section.album {
+        width: 768px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        background-color: rgba(253, 253, 253, 0.85); 
+        border: solid rgb(221, 221, 221);
+        border-width: 1px;
+        padding: 10px 0 30px;
+    }
+}
+
+@media screen and (max-width:768px){
     section.album {
         width: 100%;
         overflow: hidden;
@@ -315,21 +470,43 @@ table.track {
     float: left;
 }
 
+@media screen and (max-width:768px){
+    table.track {
+        float: none;
+        width: 480px;
+    }
+}
+
+@media screen and (max-width:480px){
+    table.track {
+        float: none;
+        width: 360px;
+    }
+}
+
+@media screen and (max-width:360px){
+    table.track {
+        float: none;
+        width: 320px;
+    }
+}
+
 th, td {
     font-family: sans-serif;
 }
 
 .Disc_No {
     width: 10px;
+    padding-left: 10px;
 }
 
 .Sound_title {
-    width: 80px;
+    width: 10px;
 }
 
 
 .composer {
-    width: 60px;
+    width: 10px;
 }
 
 
@@ -344,7 +521,7 @@ table.holding_information td {
     color: white;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:768px){
     table.holding_information td {
         text-align: left;
         font-size: 12px;
@@ -356,13 +533,31 @@ table.holding_information td {
 table.track th, td {
     text-align: left;
     font-size: 20px;
-    padding: 5px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:768px){
     table.track th, td {
-        font-size: 12px;
-        padding: 5px 5px;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:414px){
+    table.track th, td {
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:350px){
+    table.track th, td {
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 
@@ -392,7 +587,7 @@ td.staff{
     padding: 5px 5px;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:768px){
     td.staff {
         font-size: 18px;
         padding: 5px 5px;
@@ -413,9 +608,4 @@ a.sofme {
 a.icon {
     float: left;
     padding: 16px;
-}
-
-iframe.soundcloud {
-    width: 100%;
-    height: 166px;
 }
