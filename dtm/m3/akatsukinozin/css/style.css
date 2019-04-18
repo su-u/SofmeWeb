@@ -25,7 +25,7 @@ p {
 }
 
 p.album_title {
-    margin: 10px 20px;
+    margin: 10px 20px 20px;
     text-align: center;
 }
 
@@ -97,6 +97,13 @@ div.event_informetion {
     background-color: rgba(19, 16, 20, 0.774);
 }
 
+@media screen and (max-width:415px){
+    div.event_informetion {
+        padding: 180px 0;
+        background-color: rgba(19, 16, 20, 0.774);
+    }
+}
+
 div.event_informetion_cover {
     overflow: hidden;
     width: 1024px;
@@ -137,7 +144,10 @@ div.holding_information {
 @media screen and (max-width:415px){
     div.holding_information {
         width: 345px;
-        margin: auto;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 50px;
     }
 }
 
@@ -158,7 +168,15 @@ div.album_information {
 div.crossfade {
     width: 960px;
     margin: auto;
-    padding: 20px 0 0;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:415px){
+    div.crossfade {
+        width: 100%;
+        margin: auto;
+        padding: 20px 0 0;
+    }
 }
 
 div.track_wrap {
@@ -167,6 +185,32 @@ div.track_wrap {
     width: 960px;
     padding: 50px 21px;
     padding-left: 41px;
+}
+
+@media screen and (max-width:415px){
+    div.track_wrap {
+        overflow: hidden;
+        margin: auto;
+        width: 100%;
+        padding: 50px 0;
+        padding-left: 20px;
+    }
+}
+
+div.track {
+    overflow: hidden;
+    padding-bottom: 20px;
+    width: 480px;
+    float: left;
+}
+
+@media screen and (max-width:415px){
+    div.track {
+        overflow: hidden;
+        padding-bottom: 20px;
+        width: 100%;
+        float: none;
+    }
 }
 
 div.staff_wrap {
@@ -275,6 +319,20 @@ th, td {
     font-family: sans-serif;
 }
 
+.Disc_No {
+    width: 10px;
+}
+
+.Sound_title {
+    width: 80px;
+}
+
+
+.composer {
+    width: 60px;
+}
+
+
 table.holding_information {
     margin-left: 5px;
 }
@@ -285,7 +343,6 @@ table.holding_information td {
     padding: 7px 10px 0;
     color: white;
 }
-
 
 @media screen and (max-width:415px){
     table.holding_information td {
@@ -300,6 +357,13 @@ table.track th, td {
     text-align: left;
     font-size: 20px;
     padding: 5px 10px;
+}
+
+@media screen and (max-width:415px){
+    table.track th, td {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
 }
 
 table.track th.CDtitle {
@@ -323,6 +387,18 @@ table.staff {
     margin: auto;
 }
 
+td.staff{
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+@media screen and (max-width:415px){
+    td.staff {
+        font-size: 18px;
+        padding: 5px 5px;
+    }
+}
+
 footer {
     text-align: center;
     overflow: hidden;
@@ -337,4 +413,9 @@ a.sofme {
 a.icon {
     float: left;
     padding: 16px;
+}
+
+iframe.soundcloud {
+    width: 100%;
+    height: 166px;
 }
