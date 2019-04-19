@@ -52,14 +52,13 @@ h1 {
 
 h1.sofme {
     color: rgb(172, 172, 172);
-    padding-top: 10px;
+    padding: 10px 0 5px 5px;
 }
 
 @media screen and (max-width:768px){
     h1.sofme {
         color: rgb(172, 172, 172);
         font-size: 30px;
-        padding: 10px 0px 5px 5px;
     }
 }
 
