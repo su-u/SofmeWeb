@@ -91,16 +91,6 @@
   padding-left: 15px;
 }
 
-a.dtm-study {
-  color: #000000;
-  text-decoration: underline;
-}
-
-a.dtm-study:hover {
-  color: #22eaaa;
-  text-decoration: underline;
-}
-
 .events-songs {
   margin: auto;
   width: 100%;
