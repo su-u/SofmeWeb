@@ -3,4 +3,4 @@ User-agent: *
 
 #旧サイトの検索回避
 Disallow: /old/
-Allow: old/project/dtm/m3/
+Allow: /old/project/dtm/m3/
