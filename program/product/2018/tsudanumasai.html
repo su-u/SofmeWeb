@@ -578,7 +578,7 @@
     var closeFn;
 
     function closeShowingModal() {
-        var showingModal = document.querySelector('.modal.show');
+        const showingModal = document.querySelector('.modal.show');
         if (!showingModal) return;
         showingModal.classList.remove('show');
         document.body.classList.remove('disable-mouse');
@@ -590,7 +590,7 @@
     }
 
     document.addEventListener('click', function (e) {
-        var target = e.target;
+        const target = e.target;
         if (target.dataset.ctaTarget) {
             closeFn = cta(
                 target,
