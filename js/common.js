@@ -21,7 +21,3 @@ function footer() {
         }
     });
 }
-
-$('#join').on('click', function () {
-    console.log('boxをクリックしました！');
-});
