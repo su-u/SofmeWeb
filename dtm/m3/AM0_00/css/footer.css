@@ -1,0 +1,28 @@
+
+footer {
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(235, 38, 87);
+    padding: 50px 0px;
+}
+
+div.icon_wrap {
+    width: 160px;
+    margin: auto;
+}
+
+p.footer {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a.icon {
+    float: left;
+    padding: 16px;
+}
+
+img.icon_link:hover {
+    transition-duration:0.3s;
+    opacity: 0.8;
+}
