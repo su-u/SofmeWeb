@@ -1,0 +1,54 @@
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+section {
+    margin: 0 0 60px;
+}
+
+table {
+    font-size: 2em;
+}
+
+.section {
+    visibility:hidden;
+}
+
+.section.fade-in {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: fid;
+    animation-name: fid;
+    visibility: visible !important;
+  }
+  @-webkit-keyframes fid {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  @keyframes fid {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
