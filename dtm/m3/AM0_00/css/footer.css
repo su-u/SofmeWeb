@@ -2,8 +2,11 @@
 footer {
     text-align: center;
     overflow: hidden;
-    background-color: rgb(235, 38, 87);
-    padding: 50px 0px;
+    /*background-image: url(../img/background.jpg);*/
+    background: linear-gradient(to top, rgba(104, 31, 104, 0.7) 0%, rgba(128, 212, 221, 0.7) 40%),url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
 }
 
 div.icon_wrap {
