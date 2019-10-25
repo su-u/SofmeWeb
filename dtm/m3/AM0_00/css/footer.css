@@ -1,0 +1,33 @@
+
+footer {
+    text-align: center;
+    overflow: hidden;
+    /*background-image: url(../img/background.jpg);*/
+    background: linear-gradient(to top, rgba(104, 31, 104, 0.70) 0%, rgba(82, 195, 207, 0.7) 50%),url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    margin-top: 150px;
+}
+
+div.icon_wrap {
+    width: 160px;
+    margin: auto;
+}
+
+p.footer {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0 20px;
+    clear: left;
+}
+
+a.icon {
+    float: left;
+    padding: 20px 16px;
+}
+
+img.icon_link:hover {
+    transition-duration:0.3s;
+    opacity: 0.8;
+}

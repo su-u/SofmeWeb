@@ -1,0 +1,9 @@
+
+/* assets */
+@import url("assets/reset.css");
+@import url("assets/bootstrap.min.css");
+
+/* css */
+@import url("common.css");
+@import url("fadein.css");
+@import url("footer.css");

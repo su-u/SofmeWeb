@@ -1,0 +1,115 @@
+
+body {
+    /*background-color: rgb(30, 28, 39);*/
+    background: linear-gradient(to top, rgba(12, 27, 66, 0.1) 0%, rgba(22, 12, 27, 0.5) 100%),url(../img/space.jpg);
+}
+
+p {
+    font-size: 20px;
+    color: azure;
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+p.logo {
+    margin-bottom: 0;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+p.subtitle {
+    margin-bottom: 0;
+    font-size: 25px;
+    font-family: "Kokoro", sans-serif;
+}
+
+h1 {
+    color: azure;
+    font-size: 80px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+h2 {
+    color: azure;
+    font-size: 52px;
+    font-family: sans-serif;
+    padding: 12px 0 0 8px ;
+    margin-bottom: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h3 {
+    color: azure;
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.block {
+    margin: 100px 0;
+}
+
+table {
+    font-size: 20px;
+    color: azure;
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+th {
+    padding: 5px 0;
+}
+
+th.SoundTitle {
+    font-size: 30px;
+    width: 350px;
+}
+
+th.composer {
+    font-size: 30px;
+    width: 250px;
+}
+
+td {
+    padding-right: 20px;
+    padding-top: 2px;
+}
+
+div.event_title {
+    padding: 180px 0 100px;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+img.sofmelogo {
+    height: 60px;
+    float: left;
+}
+
+div.soundcloud {
+    padding: 20px 0 10px;
+}
+
+div.head2-wrap {
+    background: linear-gradient(to right, rgba(15, 73, 218, 0.4) 0%, rgba(114, 67, 126, 0) 90%);
+}
+
+div.Disc {
+    overflow: hidden;
+    padding-top: 40px;
+    min-width: 300px;
+}
+
+div.staff-wrap {
+    margin: auto;
+    text-align: center;
+}
+
+div.logo {
+    padding-left: 10px;
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+}
