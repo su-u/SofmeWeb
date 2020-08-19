@@ -1,0 +1,189 @@
+$breakpoints: (
+    'sm': 'screen and (max-width: 640px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)'
+) !default;
+
+//メディアクエリ用
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// dtm
+.probootstrap-card.with-hover .probootstrap-card-text:before {
+    background: #1acbf3;
+}
+.new-song {
+    padding-left: 20px;
+}
+.tableList {
+    margin-top: 20px;
+}
+
+// dtm/dtm-member.html
+.service.left-icon.dtm {
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+    line-height: normal;
+}
+
+// 回生ごとに色変更
+.service.left-icon.dtm.dtm-1st {
+    background: #24e1ff;
+}
+.service.left-icon.dtm.dtm-2nd {
+    background: #22b6ef;
+}
+.service.left-icon.dtm.dtm-3rd {
+    background: #30abe6;
+}
+.service.left-icon.dtm.dtm-4th {
+    background: #5072bf;
+}
+.service.left-icon.dtm.dtm-5th {
+    background: #7560ec;
+}
+
+.member-nav {
+    margin: 0;
+    padding: 0;
+
+
+    li {
+        margin: 0;
+        padding: 0 5px;
+        list-style: none;
+        display: inline;
+        font-size: 18px;
+    }
+
+    li a {
+        font-weight: 400;
+        padding: 10px 0;
+        color: #000000;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: #22eaaa;
+    }
+
+    li.active a {
+        color: #24e1ff;
+        font-size: 20px;
+    }
+    li a h2 {
+        display: inline;
+    }
+}
+
+.member-dtm {
+    width: 19%;
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+
+    @include mq(sm) {
+        width: 47%;
+    }
+}
+
+
+// dtm/dtm-what.html
+.col-md-4-dtm {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+// dtm/dtm-study.html
+
+// dtm/dtm.events
+.events-songs {
+    margin: auto;
+    width: 100%;
+    border-right: #44c3da solid 1px;
+    border-collapse: collapse;
+    thead{
+        @include mq(sm) {
+            display: none;
+        }
+
+        th {
+            background: #44c3da;
+            color: #fff;
+            padding: 10px 15px;
+            border-right: #fff solid 1px;
+            border-bottom: #fff solid 1px;
+        
+
+            &:last-child {
+                border-right: #44c3da solid 1px;
+            }
+        }
+    }
+
+    tbody {
+        th {
+            background: #44c3da;
+            color: #fff;
+            padding: 10px 15px;
+            border-bottom: #fff solid 1px;
+            @include mq(sm) {
+                display: block;
+            }
+        }
+
+         tr:last-child th {
+            border-bottom: #44c3da solid 1px;
+        }
+
+        td {
+            background: #fff;
+            padding: 10px 15px;
+            border-left: #44c3da solid 1px;
+            border-bottom: #44c3da solid 1px;
+            @include mq(sm) {
+                padding: 3px 10px;
+                display: block;
+            }
+        }
+    }
+
+    .song-number {
+        padding: 5px 5px;
+
+        @include mq(sm) {
+            background: #44c3da;
+        }
+    }
+
+    @include mq(sm) {
+        tbody td::before {
+            content: attr(label);
+            float: left;
+            clear: both;
+            font-weight: bold;
+        }
+         tbody td p {
+            padding-left: 6em;
+        }
+    }
+
+}
+
+
+// dtm-m3
+.probootstrap-card.with-hover {
+    .probootstrap-card-media {
+        img {
+            width: 100%;
+        }
+    }
+}

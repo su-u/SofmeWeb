@@ -1,0 +1,38 @@
+// m3
+
+$breakpoints: (
+    'sm': 'screen and (max-width: 640px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)'
+) !default;
+
+//メディアクエリ用
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+.soundcloud-play{
+    margin-bottom: 20px;
+}
+
+table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    thead th{
+        color: #2e7d32 !important;
+        //margin: auto;
+    }
+    tr td{
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        padding:5px;
+    }
+    & .no{
+        width: 20%;
+    }
+}
+
+

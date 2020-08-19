@@ -1,2 +1,3 @@
-import './src/styles/bulma.css'
-import './src/styles/custom.css';
+// import './src/styles/styles-merged.scss';
+// import './src/styles/style.scss';
+// import './src/styles/custom.scss';
